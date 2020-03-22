@@ -1,0 +1,14 @@
+# Site
+title: "Lawrence Wang"
+name: "Lawrence Wang"
+description: ""
+favicon: "./assets/images/favicon.ico"
+url: ""
+baseurl: ""
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag

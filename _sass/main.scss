@@ -1,0 +1,16 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: "aktiv-grotesk", sans-serif;
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
