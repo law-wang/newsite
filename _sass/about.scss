@@ -1,0 +1,57 @@
+$bodyTextFont: "AT Surt Regular", aktiv-grotesk, sans-serif; 
+
+.about-block {
+    width: 80%;
+    max-width: 1500px;
+    margin: 20px 15px 20px auto;
+    text-align: right;
+    p {
+        margin-top: 0;
+        margin-bottom: 0;    
+        font-family: $bodyTextFont;
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 1.2em;
+        a {
+            font-family: $navigationfont;
+                font-weight: 500px;
+                text-transform: uppercase;
+            text-decoration: none;
+            color: $text;
+            transition: all 0.5s linear;
+            &:hover {
+              color: $linkhover;
+            }
+        }
+    }
+}
+
+.about-links {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    font-family: $marqueefont;
+        font-weight: 300;
+        font-size: 40px;
+        text-transform: uppercase;
+    div {
+        display: inline-block;
+        margin-bottom: 5px;
+        &:first-child { 
+            margin-left: 10px;
+        }
+        &:last-child {
+            margin-right: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: $text;
+            transition: all 0.5s linear;
+            &:hover {
+              color: $linkhover;
+            }
+        }
+    }
+}

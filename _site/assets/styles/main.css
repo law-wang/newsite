@@ -1,12 +1,49 @@
+@import url("https://use.typekit.net/pbz7uek.css");
+@font-face { font-family: "Basis Grotesque Pro Black"; src: url("../assets/fonts/Basis-Grotesque-Pro-Black.otf") format("otf"); font-weight: 900; font-style: normal; }
+
+@font-face { font-family: "Basis Grotesque Pro Black"; src: url("../assets/fonts/Basis-Grotesque-Pro-Black-Italic.otf") format("otf"); font-weight: 900; font-style: italic; }
+
+@font-face { font-family: "GT America Extended Bold"; src: url("../assets/fonts/GT-America-Extended-Bold.otf") format("otf"); font-weight: bold; font-style: normal; }
+
+@font-face { font-family: "GT America Extended Bold"; src: url("../assets/fonts/GT-America-Extended-Bold-Italic.otf") format("otf"); font-weight: bold; font-style: italic; }
+
+@font-face { font-family: "GT America Extended Medium"; src: url("../assets/fonts/GT-America-Extended-Medium.otf") format("otf"); font-weight: 500; font-style: normal; }
+
+@font-face { font-family: "GT America Extended Medium"; src: url("../assets/fonts/GT-America-Extended-Medium-Italic.otf") format("otf"); font-weight: 500; font-style: italic; }
+
+@font-face { font-family: "GT America Expanded Light"; src: url("../assets/fonts/GT-America-Expanded-Light.otf") format("otf"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: "GT America Expanded Light"; src: url("../assets/fonts/GT-America-Expanded-Light-Italic.otf") format("otf"); font-weight: 300; font-style: italic; }
+
+@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/AT-Surt-Regular.otf") format("otf"); font-weight: 400; font-style: normal; }
+
+@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/AT-Surt-Regular-Oblique.otf") format("otf"); font-weight: 400; font-style: italic; }
+
+@font-face { font-family: "AT Surt Regular Bold"; src: url("../assets/fonts/ATSurtBold.otf") format("otf"); font-weight: 700; font-style: normal; }
+
+@font-face { font-family: "AT Surt Regular Bold"; src: url("../assets/fonts/ATSurtBoldOblique.otf") format("otf"); font-weight: 700; font-style: italic; }
+
+@font-face { font-family: "AT Surt Regular Medium"; src: url("../assets/fonts/ATSurtMedium.otf") format("otf"); font-weight: 500; font-style: normal; }
+
+@font-face { font-family: "AT Surt Regular Medium"; src: url("../assets/fonts/ATSurtMediumOblique.otf") format("otf"); font-weight: 500; font-style: italic; }
+
+* { box-sizing: border-box; }
+
 body { background: #ffffff; color: #000000; font-family: "aktiv-grotesk", sans-serif; }
 
-body { overflow-x: hidden; width: 100%; margin: 0; padding: 0; }
+body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
+
+.overall { display: flex; flex-flow: column; width: 100%; height: 100%; }
+
+.overall-header { flex: 1 1 320px; }
+
+@media only screen and (max-width: 650px) { .overall-header { flex: 1 1 230px; } }
+
+.overall-content { flex: 1 1 auto; overflow-y: scroll; margin-top: 5px; border-top: 10px solid black; }
+
+@media only screen and (max-width: 650px) { .overall-content { border-top: 5px solid black; } }
 
 /* Grid ONLY */
-.header-container { width: 100%; height: 320px; }
-
-@media only screen and (max-width: 650px) { .header-container { height: 230px; } }
-
 .header-container-grid { display: grid; grid-template-columns: 20% auto; grid-template-rows: 50px 250px; grid-gap: 10px; background-color: #000; border-bottom: 10px solid #000; grid-template-areas: "banner banner" "navigation title"; }
 
 @media only screen and (max-width: 1200px) { .header-container-grid { grid-template-columns: 30% auto; } }
@@ -15,7 +52,7 @@ body { overflow-x: hidden; width: 100%; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 800px) { .header-container-grid { grid-template-columns: 40% auto; } }
 
-@media only screen and (max-width: 650px) { .header-container-grid { grid: 30px 70px 50px 50px / 1fr 1fr; border: none; grid-template-areas: "banner banner" "title title" "navigation navigation" "navigation navigation"; } }
+@media only screen and (max-width: 650px) { .header-container-grid { grid: 30px 70px 50px 50px / 1fr 1fr; border: none; grid-gap: 5px; grid-template-areas: "banner banner" "title title" "navigation navigation" "navigation navigation"; } }
 
 .grid-item { background-color: #fff; overflow: hidden; }
 
@@ -46,9 +83,9 @@ body { overflow-x: hidden; width: 100%; margin: 0; padding: 0; }
 @media only screen and (max-width: 650px) { .header-title { height: 70px; padding: 0; margin-top: 5px; font-size: 70px; line-height: 70px; text-align: center; } }
 
 /* Marquee ONLY */
-.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; padding-bottom: 5px; height: 50px; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
+.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; padding-bottom: 5px; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
 
-.marquee span { display: inline-block; font-size: 40px; text-transform: capitalize; padding-left: 100%; animation: marquee 20s linear infinite; }
+.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; animation: marquee 20s linear infinite; }
 
 .marquee span:hover { animation-play-state: paused; }
 
@@ -58,17 +95,45 @@ body { overflow-x: hidden; width: 100%; margin: 0; padding: 0; }
   100% { transform: translate(-100%, 0); } }
 
 /* Functional Classes ONLY */
-.border-bottom, .mobile-border-bottom, .border-right, .mobile-border-right { box-sizing: border-box; }
+.border-bottom, .mobile-border-bottom, .border-top, .border-right, .mobile-border-right { box-sizing: border-box; }
 
 .border-bottom { border-bottom: 10px solid black; }
 
+@media only screen and (max-width: 650px) { .border-bottom { border-bottom: 5px solid black; } }
+
+.border-top { border-top: 10px solid black; }
+
+@media only screen and (max-width: 650px) { .border-top { border-top: 5px solid black; } }
+
 .border-right { border-right: 10px solid black; }
+
+@media only screen and (max-width: 650px) { .border-right { border-right: 5px solid black; } }
 
 .mobile-show { display: none; }
 
-@media only screen and (max-width: 650px) { .mobile-border-bottom { border-bottom: 10px solid black; }
-  .mobile-border-right { border-right: 10px solid black; }
+@media only screen and (max-width: 650px) { .mobile-border-bottom { border-bottom: 5px solid black; }
+  .mobile-border-right { border-right: 5px solid black; }
   .mobile-show { display: block; }
   .mobile-hide { display: none; } }
+
+.about-block { width: 80%; max-width: 1500px; margin: 20px 15px 20px auto; text-align: right; }
+
+.about-block p { margin-top: 0; margin-bottom: 0; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 60px; line-height: 1.2em; }
+
+.about-block p a { font-family: "GT America Extended Medium", sans-serif; font-weight: 500px; text-transform: uppercase; text-decoration: none; color: #000; transition: all 0.5s linear; }
+
+.about-block p a:hover { color: #999; }
+
+.about-links { width: 100%; margin-bottom: 10px; display: flex; justify-content: space-between; white-space: nowrap; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
+
+.about-links div { display: inline-block; margin-bottom: 5px; }
+
+.about-links div:first-child { margin-left: 10px; }
+
+.about-links div:last-child { margin-right: 15px; }
+
+.about-links div a { text-decoration: none; color: #000; transition: all 0.5s linear; }
+
+.about-links div a:hover { color: #999; }
 
 /*# sourceMappingURL=main.css.map */
