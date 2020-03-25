@@ -1,38 +1,54 @@
-$backgroundColor: #ffffff;
+$background: #ffffff;
 $bodyColor: #000000;
+$containerbg: #000000;
+$linkhover: #cc1100;
+
 $bodyFont: "aktiv-grotesk", sans-serif;
+$navigationfont: "GT America Extended Medium", sans-serif;
+$headerfont: "Basis Grotesque Pro Black", sans-serif;
+$marqueefont: "GT America Expanded Light", sans-serif;
+$bodytextfont: "AT Surt Regular", aktiv-grotesk, sans-serif; 
+
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: $backgroundColor;
+  background: $background;
   color: $bodyColor;
   font-family: $bodyFont;
 }
 
+/* Global Styling */
+a {
+  text-decoration: none;
+  color: $bodyColor;
+  transition: all 0.3s linear;
+  &:hover {
+    color: $linkhover;
+  }
+}
+
+/* Main Sections ONLY */
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
 }
-
 .overall {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 100%;
 }
-
 .overall-header {
   flex: 1 1 320px;
   @media only screen and (max-width: 650px) {
     flex: 1 1 230px;
   }
 }
-
 .overall-content {
   flex: 1 1 auto;
   overflow-y: scroll;
