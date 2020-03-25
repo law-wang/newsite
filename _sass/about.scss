@@ -80,7 +80,7 @@
 }
 
 .home {
-    overflow: hidden;
+    overflow-y: hidden;
     font-family: $bodytextfont;
     font-weight: normal;
     font-size: 100px;
@@ -91,6 +91,9 @@
         margin: 0;
         padding: 0;
         line-height: 1.2em;
+    }
+    @media only screen and (max-width: 650px) {
+        font-size: 50px;
     }
     .image-container {
         display: flex;

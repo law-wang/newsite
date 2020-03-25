@@ -9,6 +9,8 @@ $headerfont: "Basis Grotesque Pro Black", sans-serif;
 $marqueefont: "GT America Expanded Light", sans-serif;
 $bodytextfont: "AT Surt Regular", aktiv-grotesk, sans-serif; 
 
+::-moz-selection { color: $linkhover}
+::selection { color: $linkhover; }
 
 * {
   box-sizing: border-box;
@@ -40,21 +42,27 @@ body {
 .overall {
   display: flex;
   flex-flow: column;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
 }
 .overall-header {
-  flex: 1 1 320px;
+  flex-basis: 320px;
   @media only screen and (max-width: 650px) {
-    flex: 1 1 230px;
+    flex-basis: 215px;
   }
 }
 .overall-content {
-  flex: 1 1 auto;
-  overflow-y: scroll;
+  flex-basis: auto;
   margin-top: 5px;
   border-top: 10px solid black;
   @media only screen and (max-width: 650px) {
     border-top: 5px solid black;
   }
+}
+.noscroll {
+  overflow-y: hidden;
+}
+.yesscroll {
+  overflow-y: scroll;
 }

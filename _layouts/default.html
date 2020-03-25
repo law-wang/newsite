@@ -21,10 +21,16 @@
       <header class="overall-header">
         {% include header.html %}
       </header>
-    
-      <main class="overall-content">
-        {{ content}}
-      </main>
+      
+      {% if page.title == "Home" %}
+        <main class="overall-content noscroll">
+          {{ content}}
+        </main>
+      {% else %}
+        <main class="overall-content yesscroll">
+          {{ content}}
+        </main>
+      {% endif %}
 
     </section>
     
