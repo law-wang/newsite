@@ -27,6 +27,8 @@
 
 @font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtMediumOblique.otf"); font-weight: 500; font-style: italic; }
 
+@font-face { font-family: "Millionaire Script"; src: url("../assets/fonts/Millionaire-Script.otf"); font-weight: 300; font-style: normal; }
+
 ::-moz-selection { color: #cc1100; }
 
 ::selection { color: #cc1100; }
@@ -95,7 +97,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 /* Marquee ONLY */
 .marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; padding-bottom: 5px; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
 
-.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; animation: marquee 20s linear infinite; }
+.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; animation: marquee 25s linear infinite; }
 
 .marquee span:hover { animation-play-state: paused; }
 
