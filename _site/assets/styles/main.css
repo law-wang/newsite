@@ -181,9 +181,25 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 /* Grid Set Up */
 .project { width: 100%; height: 100%; display: grid; grid: auto / 73% 27%; grid-template-areas: "projects fun-things"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
 
+@media only screen and (max-width: 1200px) { .project { grid: auto / 68% 32%; } }
+
+@media only screen and (max-width: 1050px) { .project { grid: auto / 60% 40%; } }
+
+@media only screen and (max-width: 650px) { .project { display: flex; flex-wrap: wrap; }
+  .project .project-grouping { width: 100%; }
+  .project .fun-things-grouping { width: 100%; } }
+
 .project .project-header { font-family: "GT America Expanded Black", sans-serif; font-size: 80px; text-transform: uppercase; padding: 8px; line-height: 1.04em; }
 
+@media only screen and (max-width: 900px) { .project .project-header { font-size: 60px; } }
+
+@media only screen and (max-width: 1050px) { .project .project-header { font-size: 50px; } }
+
+@media only screen and (max-width: 650px) { .project .project-header { text-align: center; } }
+
 .project-grouping, .fun-things-grouping { background-color: #ffffff; height: 100%; overflow-x: hidden; overflow-y: auto; }
+
+@media only screen and (max-width: 650px) { .project-grouping, .fun-things-grouping { height: auto; } }
 
 .project-grouping { grid-area: "projects"; }
 
@@ -195,12 +211,22 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 .readmore-links a:last-child { text-align: right; float: right; }
 
-.archive { padding: 8px 10px 0 10px; font-family: "Millionaire Script", serif; font-weight: 300; text-transform: uppercase; font-size: 40px; }
+@media only screen and (max-width: 650px) { .readmore-links { font-size: 20px; } }
+
+.archive { padding: 8px 5px 0 20px; font-family: "Millionaire Script", serif; font-weight: 300; text-transform: uppercase; font-size: 40px; }
+
+@media only screen and (max-width: 650px) { .archive { font-size: 35px; } }
+
+@media only screen and (max-width: 550px) { .archive { font-size: 30px; } }
 
 /* Accordion Set Up */
 input { display: none; }
 
 input + label { display: block; position: relative; padding: 10px 20px 0 20px; font-family: "Millionaire Script", serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
+
+@media only screen and (max-width: 650px) { input + label { font-size: 35px; } }
+
+@media only screen and (max-width: 550px) { input + label { font-size: 30px; } }
 
 input + label:after, input + label:before { position: absolute; background: black; content: ''; transform: rotate(0deg); transition: 0.5s; top: 50%; }
 
@@ -213,6 +239,8 @@ input ~ div { height: 1px; padding: 0 10px; overflow: hidden; }
 input ~ div > * { opacity: 0; transition: 1s; }
 
 input ~ div > p { padding: 0; margin: 0; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 30px; line-height: 1.25em; }
+
+@media only screen and (max-width: 650px) { input ~ div > p { font-size: 20px; } }
 
 input:checked ~ div { height: auto; margin-bottom: 10px; }
 
