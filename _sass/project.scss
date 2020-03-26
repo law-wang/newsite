@@ -1,0 +1,133 @@
+$projectTitleFont: "Millionaire Script", serif;
+$projectHeaderFont: "GT America Expanded Black", sans-serif;
+
+/* Grid Set Up */
+.project {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid: auto / 73% 27%;
+    grid-template-areas: 
+        "projects fun-things";
+    grid-gap: 10px;
+    overflow-x: hidden;
+    background-color: $containerbg;
+    .project-header {
+        font-family: $projectHeaderFont;
+            font-size: 80px;
+            text-transform: uppercase;
+        padding: 8px;
+        line-height: 1.04em;
+    }
+}
+.project-grouping,
+.fun-things-grouping {
+    background-color: $background;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.project-grouping {
+    grid-area: "projects";
+}
+.fun-things-grouping {
+    grid-area: "fun-things";
+}
+
+.readmore-links {
+    font-family: $projectHeaderFont;
+      font-size: 30px;
+      font-weight: 900;
+    margin: 10px auto 5px auto;
+    flex-wrap: wrap;
+    width: 100%;
+    a {
+        width: 50%;
+        &:last-child {
+            text-align: right;
+            float: right;
+        }
+    }
+}
+
+.archive {
+    padding: 8px 10px 0 10px;
+    font-family: $projectTitleFont;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 40px;
+}
+
+/* Accordion Set Up */
+input {
+	display: none;
+	+ label { 
+		display: block;
+		position: relative;
+        padding: 10px 20px 0 20px;
+        font-family: $projectTitleFont;
+            font-weight: 300;
+            font-size: 40px;
+            text-transform: uppercase;
+	}
+	+ label:after,
+	+ label:before {
+		position: absolute;
+		background: black;
+		content: '';
+		transform: rotate(0deg);
+		transition: 0.5s;
+		top: 50%;	
+	}
+	+ label:after { 
+        right: 10px;
+        width: 20px;
+        height: 4px;
+        margin-top: 0px;
+	}
+	+ label:before { 
+        right: 18px;
+        height: 20px;
+        width: 4px;
+        margin-top: -8px;
+    }
+    ~ div {
+        height: 1px;
+        padding: 0 10px;
+		overflow: hidden; 
+		> * {
+			opacity: 0;
+			transition: 1s;
+        } 
+        > p {
+            padding: 0;
+            margin: 0;
+            font-family: $bodytextfont;
+                font-size: 30px;
+                line-height: 1.25em;
+        }
+	}
+}
+input:checked {
+	~ div { 
+		height: auto; 
+		margin-bottom: 10px;
+		> * {
+			opacity: 1;
+			transition: 1s;
+			transition-delay: 0.25s;
+		}
+	}
+	+ label:before  {
+		transform: rotate(270deg);
+		transition: 0.5s;
+	}
+	+ label:after {
+		transform: rotate(360deg);
+		transition: 0.5s;
+	}
+}
+label:hover {
+    cursor: help;
+    color: $linkhover;
+}

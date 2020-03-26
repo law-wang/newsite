@@ -58,6 +58,20 @@
 }
 
 @font-face {
+    font-family: "GT America Expanded Black";
+    src: url('/assets/fonts/GT-America-Expanded-Black.otf') format('otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GT America Expanded Black";
+    src: url('/assets/fonts/GT-America-Expanded-Black-Italic.otf') format('otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
     font-family: "AT Surt Regular";
     src: url('/assets/fonts/AT-Surt-Regular.otf');
     font-weight: 400;

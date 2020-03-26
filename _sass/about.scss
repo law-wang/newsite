@@ -82,9 +82,11 @@
 .home {
     overflow-y: hidden;
     font-family: $bodytextfont;
-    font-weight: normal;
-    font-size: 100px;
-    text-transform: uppercase;
+        font-weight: normal;
+        font-size: 100px;
+        text-transform: uppercase;
+    max-width: 1500px;
+    float: right;
     margin: 10px;
     p {
         text-align: right;
