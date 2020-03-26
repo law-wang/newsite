@@ -63,6 +63,9 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 .yesscroll { overflow-y: scroll; }
 
+/* Preloader ONLY */
+.loader { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #fff; }
+
 /* Grid ONLY */
 .header-container-grid { display: grid; grid-template-columns: 20% auto; grid-template-rows: 50px 250px; grid-gap: 10px; background-color: #000000; border-bottom: 10px solid #000000; grid-template-areas: "banner banner" "navigation title"; }
 
