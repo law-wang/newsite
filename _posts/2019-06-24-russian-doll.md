@@ -5,7 +5,7 @@ updated: 2019-06-24 23:43
 published: true
 category: Television
 tag: [Netflix, Featured]
-permalink: "/russian-doll"
+permalink: "/blog/russian-doll"
 ---
 
 You would think that after an entire school year of Nietzsche, Meursault, Godot, Kafka, Hemingway, and _Like Water for Chocolate_ in International Baccalaureate English would be enough absurdist discussion for a while, if not an entire lifetime. But _Russian Doll_, the extremely odd, extremely beautiful, and extremely thought-provoking delight, proved to be just that piece of existentialism I never knew I needed.

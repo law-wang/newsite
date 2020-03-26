@@ -5,10 +5,12 @@ updated: 2018-07-22 19:41
 published: true
 category: Movie
 tag: [Tom Ford, David Fincher]
-permalink: "/gone-girl-nocturnal-animals"
+permalink: "/blog/gone-girl-nocturnal-animals"
 ---
 
 _Gone Girl_ and _Nocturnal Animals_ — released two years apart, one by the legendary David Fincher, the other by the fashion mongol Tom Ford — are strikingly similar in many ways. Both contain wonderful shots, such as when Ben Affleck’s fingers run through Rosamund Pike’s hair and when Amy Adams stands in front of the mirror in her green dress as A Table For Two plays in the background. _Gone Girl_ describes the aftermath of a girl losing the perfect guy she was promised, whereas _Nocturnal Animals_ describes that of a guy losing his wife and child. Now, maybe Tom Ford’s use of color and treatment of silence makes his work the more artsy of the two, but we should all be able to agree that the two share a common discussion of love and revenge.  
+
+![Cover](/assets/images/Nocturnal.jpg)
 
 ## Two Perspectives
 
@@ -17,8 +19,6 @@ The two films are conducted through different characters. In _Gone Girl_, Nick i
 Nick and Amy are inmates trapped in the prison of marriage, which sucks dry their love and strips away their romantic fantasies. They loved different things: Amy loved the Prince Charming and wasn’t aware that he’s actually lazy and uninspired; Nick loved the Cool Girl and wasn’t aware that she can be overbearing yet forbearant, arrogant yet timid, cold-hearted yet warm-blooded, self-loathing yet determined. One of them has to lose for the other to win.
 
 In Edward’s manuscripts, Tony Hasting, the autobiographical protagonist, conducts an immaculate revenge. Tony suffers and plots and kills because for him, love and hate are disparate emotions directed at different people. He loves his wife and daughter, and he has to kill Ray Marcus to avenge his wife and child. In Susan and Edward’s marriage, however, it’s not so clear: Susan is Edward’s wife _and_ archnemesis: she is both the love of his life and the one who brutally killed the love of his life. In fact, the Susan that Edward loves had been long dead. She died once in the hands of Ray Marcus. She died another time when she told Edward: “I am a realist. I am happy.”
-
-![Cover](https://cdn.mos.cms.futurecdn.net/CRbRhtoz5tR3fFR4o3ExxX.jpg)
 
 ## Role of Society
 

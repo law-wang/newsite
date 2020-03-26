@@ -184,6 +184,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 500px) { .home .image-container img { width: 50%; } }
 
+/* Home Page ONLY */
 .blog { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "description menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
 
 @media only screen and (max-width: 1000px) { .blog { grid: auto / 50% 50%; } }
@@ -228,7 +229,14 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 .post-info { font-family: "GT America Extended Medium", sans-serif; font-weight: 500; text-transform: uppercase; font-size: 20px; text-align: right; padding: 0 15px 5px 10px; }
 
+/* Blog Content Styling */
 .post-content { font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
+
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 { font-family: "GT America Extended Medium", sans-serif; }
+
+.post-content h1, .post-content h2 { text-transform: uppercase; }
+
+.post-content img { max-width: 100%; max-height: 350px; object-fit: cover; border: 0; margin: 30px auto; display: block; width: 80%; }
 
 /* Grid Set Up */
 .project { width: 100%; height: 100%; display: grid; grid: auto / 73% 27%; grid-template-areas: "projects fun-things"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }

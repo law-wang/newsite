@@ -5,7 +5,7 @@ updated: 2019-08-03 20:08
 published: true
 category: Movie
 tag: []
-permalink: "/crazy-rich-asians"
+permalink: "/blog/crazy-rich-asians"
 ---
 
 _Crazy Rich Asians_ is a movie that got many things right. The drama is great (albeit unrealistic at times), the performances by Constance Wu, Awkwafina, and Michelle Yeoh (soon debuting her own _Star Trek_ series!) are outstanding, the soundtrack — with heavy Asian-influenced curation (particularly the mandarin version of Yellow) — is touching. But it is also a movie that got a couple of key things wrong, and those significant flaws result in an identity crisis that diminishes the overall message.
