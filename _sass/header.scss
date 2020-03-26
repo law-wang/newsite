@@ -100,7 +100,6 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 5px;
   font-family: $marqueefont;
     font-weight: 300;
   span {
@@ -108,13 +107,15 @@
     font-size: 40px;
     text-transform: uppercase;
     padding-left: 100%;
+    padding-bottom: 5px;
     animation: marquee 25s linear infinite;
-    &:hover {
-      animation-play-state: paused;
-    }
     @media only screen and (max-width: 650px) {
       font-size: 20px;
     }
+  }
+  transition: all 0.5s linear;
+  &:hover {
+    background-color: $linkhover;
   }
 }
 @keyframes marquee {

@@ -8,11 +8,15 @@ $navigationfont: "GT America Extended Medium", sans-serif;
 $headerfont: "Basis Grotesque Pro Black", sans-serif;
 $marqueefont: "GT America Expanded Light", sans-serif;
 $bodytextfont: "AT Surt Regular", aktiv-grotesk, sans-serif; 
+$projectTitleFont: "Millionaire Script", serif;
+$projectHeaderFont: "GT America Expanded Black", sans-serif;
 
 ::-moz-selection { color: $linkhover}
 ::selection { color: $linkhover; }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -75,4 +79,14 @@ body {
 	top: 0;
 	left: 0;
   background-color: #fff;
+}
+
+/* Functional Classes ONLY */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+          user-select: none;
 }

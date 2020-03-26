@@ -13,7 +13,7 @@ function greeting() {
     if (hr == 9) { document.getElementById("note").innerHTML = "9AM: Would you believe me now, if I say I got caught up in a wave, almost gave it away"; }
     if (hr == 10) { document.getElementById("note").innerHTML = "10AM: Our country, guess it was a lawless land"; }
     if (hr == 11) { document.getElementById("note").innerHTML = "11AM: Hang your head low in the glow of the vending machine I'm not dying"; }
-    if (hr == 12) { document.getElementById("note").innerHTML = "12PM: What are you having for lunch?"; }
+    if (hr == 12) { document.getElementById("note").innerHTML = "12PM: But there's no going back against this california feeling"; }
     if (hr == 13) { document.getElementById("note").innerHTML = "1PM: I guess you win some and lose some, 'long as the outcome's income. I want it all, and then some."; }
     if (hr == 14) { document.getElementById("note").innerHTML = "2PM: It’s a train wreck, but I won’t crash it"; }
     if (hr == 15) { document.getElementById("note").innerHTML = "3PM: tell me all your original sins"; }
