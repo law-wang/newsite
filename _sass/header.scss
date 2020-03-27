@@ -91,6 +91,9 @@
     line-height: 70px;
     text-align: center;
   }
+  @media only screen and (max-width: 550px) {
+    font-size: 55px;
+  }
 }
 
 /* Marquee ONLY */

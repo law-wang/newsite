@@ -130,6 +130,7 @@
     }
     h1, h2 {
         text-transform: uppercase;
+        line-height: 1.2em;
     }
     img {
         max-width: 100%;
@@ -139,6 +140,20 @@
         margin: 30px auto;
         display: block;
         width: 80%;
+    }
+    blockquote {
+        font-style: italic;
+    }
+    ul, ol {
+        font-family: $bodyFont;
+    }
+    .footnotes {
+        font-size: 18px;
+        color: rgb(71, 71, 71);
+    }
+    code {
+        font-family: $monofont;
+        font-size: 18px;
     }
 }
 
