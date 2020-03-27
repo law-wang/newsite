@@ -1,6 +1,6 @@
 <main class="blog-menu">
 
-    <h4 class="menu-category-name border-bottom" id="{{ category[0] | downcase }}"><span>Personal</span></h4>
+    <h4 class="menu-category-name bgcolor-changer noselect border-bottom" id="{{ category[0] | downcase }}"><span>Personal</span></h4>
     <div class="post-listing border-bottom">
         <ul>
             {% for post in site.categories['Personal'] %}
@@ -14,7 +14,7 @@
     {% for category in site.categories %}
     {% unless category contains 'Personal' or category contains 'Project' or category contains 'Literature' %}
 
-        <h4 class="menu-category-name border-bottom" id="{{ category[0] | downcase }}"><span>{{ category[0] }}</span></h4>
+        <h4 class="menu-category-name bgcolor-changer noselect border-bottom" id="{{ category[0] | downcase }}"><span>{{ category[0] }}</span></h4>
         <div class="post-listing border-bottom">
             {% assign pages_list = category[1]  %}
             <ul>
@@ -31,7 +31,7 @@
     {% endunless %}
     {% endfor %}
 
-    <h4 class="menu-category-name border-bottom" id="{{ category[0] | downcase }}"><span>Literature</span></h4>
+    <h4 class="menu-category-name bgcolor-changer noselect border-bottom" id="{{ category[0] | downcase }}"><span>Literature</span></h4>
     <div class="post-listing border-bottom">
         <ul>
             {% for post in site.categories['Literature'] %}

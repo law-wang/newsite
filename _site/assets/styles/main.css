@@ -44,7 +44,7 @@ body { background: #ffffff; color: #000000; font-family: "aktiv-grotesk", sans-s
 /* Global Styling */
 a { text-decoration: none; color: #000000; transition: all 0.3s linear; }
 
-a:hover { color: #cc1100; }
+a:hover { color: #cc1100; cursor: help; }
 
 /* Main Sections ONLY */
 body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
@@ -68,6 +68,10 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 /* Functional Classes ONLY */
 .noselect { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.bgcolor-changer { transition: all 0.5s linear; }
+
+.bgcolor-changer:hover { background-color: #cc1100; }
 
 /* Grid ONLY */
 .header-container-grid { display: grid; grid-template-columns: 20% auto; grid-template-rows: 50px 250px; grid-gap: 10px; background-color: #000000; border-bottom: 10px solid #000000; grid-template-areas: "banner banner" "navigation title"; }
@@ -107,13 +111,11 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 @media only screen and (max-width: 550px) { .header-title { font-size: 55px; } }
 
 /* Marquee ONLY */
-.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; transition: all 0.5s linear; }
+.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
 
 .marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 25s linear infinite; }
 
 @media only screen and (max-width: 650px) { .marquee span { font-size: 20px; } }
-
-.marquee:hover { background-color: #cc1100; }
 
 @keyframes marquee { 0% { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); } }
@@ -162,6 +164,8 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 .about-links div:last-child { margin-right: 15px; }
 
+.about-links div a:hover { color: #000000; }
+
 @media only screen and (max-width: 1100px) { .about-links { font-size: 30px; } }
 
 @media only screen and (max-width: 800px) { .about-links { font-size: 25px; } }
@@ -187,7 +191,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 @media only screen and (max-width: 500px) { .home .image-container img { width: 50%; } }
 
 /* Home Page ONLY */
-.blog { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "description menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
+.blog { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "description blog-menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
 
 @media only screen and (max-width: 1000px) { .blog { grid: auto / 50% 50%; } }
 
@@ -197,7 +201,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .item-blog-menu, .item-blog-description, .item-post-content { height: auto; } }
 
-.item-blog-menu { grid-area: "menu"; }
+.item-blog-menu { grid-area: "blog-menu"; }
 
 .item-blog-description { grid-area: "description"; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 60px; line-height: 1.2em; text-align: right; }
 
@@ -219,20 +223,24 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 .blog-menu ul h5 { margin: 0; padding: 5px; }
 
 /* Post Styling */
-.post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
+.post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
 
 @media only screen and (max-width: 1000px) { .post { grid: auto / 50% 50%; } }
 
 @media only screen and (max-width: 650px) { .post { grid-template-columns: 100%; } }
 
-.item-post-content { grid-area: "content"; }
+.item-post-content { grid-area: "content"; height: 100%; display: flex; flex-flow: column-reverse; }
 
-.post-title { font-family: "Millionaire Script", serif; font-weight: 300; text-transform: uppercase; font-size: 40px; text-align: right; padding: 10px 15px 0 10px; }
+.post-container { order: 2; width: 100%; flex-basis: auto; overflow-y: scroll; overflow-x: hidden; }
 
-.post-info { font-family: "GT America Extended Medium", sans-serif; font-weight: 500; text-transform: uppercase; font-size: 20px; text-align: right; padding: 0 15px 5px 10px; }
+.post-container .post-title { width: 100%; font-family: "Millionaire Script", serif; font-weight: 300; text-transform: uppercase; font-size: 40px; text-align: right; padding: 10px 15px 0 10px; }
+
+@media only screen and (max-width: 650px) { .post-container .post-title { font-size: 33px; } }
+
+.post-container .post-info { width: 100%; font-family: "GT America Extended Medium", sans-serif; font-weight: 500; text-transform: uppercase; font-size: 20px; text-align: right; margin-top: -5px; padding: 0 15px 5px 10px; }
 
 /* Blog Content Styling */
-.post-content { font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
+.post-content { width: 100%; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
 
 .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 { font-family: "GT America Extended Medium", sans-serif; }
 
@@ -247,6 +255,17 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 .post-content .footnotes { font-size: 18px; color: #474747; }
 
 .post-content code { font-family: zeitung-mono, roboto, sans-serif; font-size: 18px; }
+
+/* Navigation Styling */
+.post-navigation { order: 1; width: 100%; flex-basis: 20px; background-color: #ffffff; z-index: 100; }
+
+.post-navigation a { font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 15px; margin: 5px 0; }
+
+.post-navigation a:hover { color: #000000; }
+
+.post-navigation .prev { display: block; width: auto; float: left; padding-left: 5px; }
+
+.post-navigation .next { display: block; width: auto; float: right; text-align: right; padding-right: 5px; }
 
 /* Grid Set Up */
 .project { width: 100%; height: 100%; display: grid; grid: auto / 73% 27%; grid-template-areas: "projects fun-things"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }

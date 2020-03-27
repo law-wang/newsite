@@ -34,6 +34,7 @@ a {
   transition: all 0.3s linear;
   &:hover {
     color: $linkhover;
+    cursor: help;
   }
 }
 
@@ -90,4 +91,10 @@ body {
      -moz-user-select: none; 
       -ms-user-select: none; 
           user-select: none;
+}
+.bgcolor-changer {
+  transition: all 0.5s linear;
+  &:hover {
+    background-color: $linkhover;
+  }
 }

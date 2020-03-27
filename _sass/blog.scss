@@ -1,3 +1,4 @@
+
 /* Home Page ONLY */
 .blog {
     width: 100%;
@@ -5,7 +6,7 @@
     display: grid;
     grid: auto / 65% 35%;
     grid-template-areas: 
-        "description menu";
+        "description blog-menu";
     grid-gap: 10px;
     overflow-x: hidden;
     background-color: $containerbg;
@@ -28,7 +29,7 @@
     }
 }
 .item-blog-menu {
-    grid-area: "menu";
+    grid-area: "blog-menu";
 }
 .item-blog-description {
     grid-area: "description";
@@ -86,7 +87,7 @@
     display: grid;
     grid: auto / 65% 35%;
     grid-template-areas: 
-        "content menu";
+        "content blog-menu";
     grid-gap: 10px;
     overflow-x: hidden;
     background-color: $containerbg;
@@ -99,26 +100,43 @@
 }
 .item-post-content {
     grid-area: "content";
+    height: 100%;
+    display: flex;
+    flex-flow: column-reverse;
 }
-.post-title {
-    font-family: $projectTitleFont;
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 40px;
-        text-align: right;
-    padding: 10px 15px 0 10px;
-}
-.post-info {
-    font-family: $navigationfont;
-        font-weight: 500;
-        text-transform: uppercase;
-        font-size: 20px;
-        text-align: right;
-    padding: 0 15px 5px 10px;
+.post-container {
+    order: 2;
+    width: 100%;
+    flex-basis: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .post-title {
+        width: 100%;
+        font-family: $projectTitleFont;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 40px;
+            text-align: right;
+        padding: 10px 15px 0 10px;
+        @media only screen and (max-width: 650px) {
+            font-size: 33px;
+        }
+    }
+    .post-info {
+        width: 100%;
+        font-family: $navigationfont;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: right;
+        margin-top: -5px;
+        padding: 0 15px 5px 10px;
+    }
 }
 
 /* Blog Content Styling */
 .post-content {
+    width: 100%;
     font-family: $bodytextfont;
         font-weight: normal;
         font-size: 20px;
@@ -157,3 +175,32 @@
     }
 }
 
+/* Navigation Styling */
+.post-navigation {
+    order: 1;
+    width: 100%;
+    flex-basis: 20px;
+	background-color: $background;
+    z-index: 100;
+    a {
+        font-family: $bodytextfont;
+            font-size: 15px;
+        margin: 5px 0;
+        &:hover {
+            color: $bodyColor;
+        }
+    }
+    .prev {
+        display: block;
+        width: auto;
+        float: left;
+        padding-left: 5px;
+    }
+    .next {
+        display: block;
+        width: auto;
+        float: right;
+        text-align: right;
+        padding-right: 5px;
+    }
+}

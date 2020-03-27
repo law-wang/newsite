@@ -116,10 +116,6 @@
       font-size: 20px;
     }
   }
-  transition: all 0.5s linear;
-  &:hover {
-    background-color: $linkhover;
-  }
 }
 @keyframes marquee {
   0% {
