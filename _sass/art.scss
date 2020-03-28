@@ -54,6 +54,7 @@
         opacity: 1;
         cursor: help;
     }
+
     .red {
         width: 100%;
         height: 500px;
@@ -115,7 +116,7 @@
     text-align: center;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(204, 17, 0, 0.8);
     /** Pad the lightbox image */
     img {
         max-width: 90%;
