@@ -35,13 +35,9 @@
 
     </section>
 
-    <!-- LOADER -->
-    <!-- <div class="loader"></div>
-    <script>
-      $(window).on("load", function() {
-        $(".loader").fadeOut("100");
-      });
-    </script> -->
-    
+    {% if page.layout == "gallery"%}
+      {% include loader.html %}
+    {% endif %}
+
   </body>
 </html>
