@@ -96,14 +96,16 @@
     .content-title {
         font-family: $navigationfont;
         font-size: 30px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
         text-transform: uppercase;
         margin: 0;
     }
     .content-text {
         font-family: $bodytextfont;
+        text-align: justify;
         font-size: 15px;
-        margin: 0;
+        margin: 0 auto;
+        max-width: 400px;
     }
 }
   
