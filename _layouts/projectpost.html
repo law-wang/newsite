@@ -11,13 +11,36 @@ layout: default
 
         <div class="projectpost-nav column-xs-12 column-md-3 column-lg-2">
 
-            <div 
+            {% assign cat = page.category %}
+            {% for post in site.categories[cat] %}
+                {% if post.url == page.url %}
+                    {% assign post_index0 = forloop.index0 %}
+                    {% assign post_index1 = forloop.index %}
+                {% endif %}
+            {% endfor %}
 
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veritatis voluptates maxime! Maxime vero sint nisi commodi pariatur tenetur, qui dolor explicabo id ad ut quae soluta, autem voluptatum reprehenderit.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veritatis voluptates maxime! Maxime vero sint nisi commodi pariatur tenetur, qui dolor explicabo id ad ut quae soluta, autem voluptatum reprehenderit.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veritatis voluptates maxime! Maxime vero sint nisi commodi pariatur tenetur, qui dolor explicabo id ad ut quae soluta, autem voluptatum reprehenderit.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veritatis voluptates maxime! Maxime vero sint nisi commodi pariatur tenetur, qui dolor explicabo id ad ut quae soluta, autem voluptatum reprehenderit.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veritatis voluptates maxime! Maxime vero sint nisi commodi pariatur tenetur, qui dolor explicabo id ad ut quae soluta, autem voluptatum reprehenderit.
+            {% for post in site.categories[cat] %}
+                {% if post_index0 == forloop.index %}
+                    {% assign next_post = post %}
+                {% endif %}
+                {% if post_index1 == forloop.index0 %}
+                    {% assign prev_post = post %}
+                {% endif %}
+            {% endfor %}
+
+            {% if prev_post %}
+                <div class="projpost-nav-title border-bottom">PREV:</div>
+                <div class="projpost-nav-item border-bottom">
+                    <a href="{{ prev_post.url }}">{{ prev_post.title }}</a>
+                </div>
+            {% endif %}
+
+            {% if next_post %}
+                <div class="projpost-nav-title border-bottom">NEXT:</div>
+                <div class="projpost-nav-item border-bottom">
+                    <a href="{{ next_post.url }}">{{ next_post.title }}</a>
+                </div>
+            {% endif %}
         </div>
 
     </div>

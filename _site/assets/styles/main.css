@@ -479,9 +479,23 @@ label:hover { cursor: help; color: #cc1100; }
 
 .projectpage-grid > div { background-color: #ffffff; height: 100%; overflow-x: hidden; overflow-y: scroll; }
 
+@media only screen and (max-width: 62rem) { .projectpage-grid { height: auto; } }
+
+@media only screen and (max-width: 650px) { .projectpage-grid { grid-gap: 5px; } }
+
 .projectpage-grid .projectpost-title { font-family: "GT America Expanded Black", sans-serif; font-size: 40px; text-transform: uppercase; padding: 5px 10px; }
 
-.projectpage-grid .projectpost-content { padding: 10px; }
+@media only screen and (max-width: 650px) { .projectpage-grid .projectpost-title { font-size: 30px; } }
+
+.projectpage-grid .projectpost-content { padding: 0 10px; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 18px; }
+
+.projectpage-grid .projectpost-nav { width: 100%; }
+
+.projectpage-grid .projectpost-nav .projpost-nav-title { width: 100%; font-family: "GT America Extended Medium", sans-serif; font-size: 40px; padding: 0 10px; }
+
+@media only screen and (max-width: 650px) { .projectpage-grid .projectpost-nav .projpost-nav-title { font-size: 30px; } }
+
+.projectpage-grid .projectpost-nav .projpost-nav-item { font-family: "Millionaire Script", serif; font-size: 20px; text-transform: uppercase; padding: 5px 10px 0 10px; }
 
 .gallery-navigation { width: 100%; display: flex; justify-content: space-between; white-space: nowrap; font-family: "GT America Extended Medium", sans-serif; font-weight: 300; font-size: 50px; text-transform: uppercase; }
 

@@ -192,17 +192,42 @@ label:hover {
         overflow-x: hidden;
         overflow-y: scroll;
     }
+    @media only screen and (max-width: 62rem) {
+        height: auto;
+    }
+    @media only screen and (max-width: 650px) {
+        grid-gap: 5px;
+    }
     .projectpost-title {
         font-family: $projectHeaderFont;
             font-size: 40px;
             text-transform: uppercase;
         padding: 5px 10px;
+        @media only screen and (max-width: 650px) {
+            font-size: 30px;
+        }
     }
     .projectpost-content {
-        padding: 10px;
-
+        padding: 0 10px;
+        font-family: $bodytextfont;
+        font-size: 18px;
     }
     .projectpost-nav {
-
+        width: 100%;
+        .projpost-nav-title {
+            width: 100%;
+            font-family: $navigationfont;
+                font-size: 40px;
+            padding: 0 10px;
+            @media only screen and (max-width: 650px) {
+                font-size: 30px;
+            }
+        }
+        .projpost-nav-item {
+            font-family: $projectTitleFont;
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 5px 10px 0 10px;
+        }
     }
 }
