@@ -31,6 +31,6 @@ So don't become discouraged when the suffocating reality comes crashing down. So
 Thank you for all the memories, Class of 2019, I am so glad to have had all of you.
 
 <div class="divider"></div>
-![Cover](/assets/images/graduation.jpg)
+![Cover](/assets/images/blog/graduation.jpg)
 
 _Delivered May 31, 2019 at Troy High School's Commencement Ceremony as valedictorian for the Class of 2019._
