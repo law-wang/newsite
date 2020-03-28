@@ -472,6 +472,17 @@ input:checked + label:after { transform: rotate(360deg); transition: 0.5s; }
 
 label:hover { cursor: help; color: #cc1100; }
 
+/* Individual Project Pages ONLY */
+.projectpage { height: 100%; width: 100%; overflow-x: hidden; }
+
+.projectpage-grid { height: 100%; grid-gap: 10px; background-color: #000000; }
+
+.projectpage-grid > div { background-color: #ffffff; height: 100%; overflow-x: hidden; overflow-y: scroll; }
+
+.projectpage-grid .projectpost-title { font-family: "GT America Expanded Black", sans-serif; font-size: 40px; text-transform: uppercase; padding: 5px 10px; }
+
+.projectpage-grid .projectpost-content { padding: 10px; }
+
 .gallery-navigation { width: 100%; display: flex; justify-content: space-between; white-space: nowrap; font-family: "GT America Extended Medium", sans-serif; font-weight: 300; font-size: 50px; text-transform: uppercase; }
 
 .gallery-navigation div { display: inline-block; }

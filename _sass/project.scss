@@ -174,3 +174,35 @@ label:hover {
     cursor: help;
     color: $linkhover;
 }
+
+
+/* Individual Project Pages ONLY */
+.projectpage {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.projectpage-grid {
+    height: 100%;
+    grid-gap: 10px;
+    background-color: $containerbg;
+    & > div {
+        background-color: $background;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .projectpost-title {
+        font-family: $projectHeaderFont;
+            font-size: 40px;
+            text-transform: uppercase;
+        padding: 5px 10px;
+    }
+    .projectpost-content {
+        padding: 10px;
+
+    }
+    .projectpost-nav {
+
+    }
+}
