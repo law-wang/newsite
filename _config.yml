@@ -1,7 +1,7 @@
 # Site
 title: "Lawrence Wang"
 description: ""
-favicon: "assets/images/favicon.ico"
+favicon: "/assets/images/favicon.ico"
 url: "http://www.rencewang.com"
 baseurl: "http://www.rencewang.com"
 
