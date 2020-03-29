@@ -358,7 +358,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 1000px) { .post { grid: auto / 50% 50%; } }
 
-@media only screen and (max-width: 650px) { .post { grid-template-columns: 100%; } }
+@media only screen and (max-width: 650px) { .post { grid: 1fr / 1fr; grid-template-areas: "content"; } }
 
 .item-post-content { grid-area: "content"; height: 100%; display: flex; flex-flow: column-reverse; }
 
