@@ -1,0 +1,152 @@
+---
+title: inmydefense
+permalink: "/project/inmydefense"
+---
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>inmydefense | Lawrence Wang</title>
+    <meta name="author" content="Rence Wang">
+    <link rel="shortcut icon" type="image/png" href="../assets/images/favicon-1.png"/>
+    <style type="text/css">
+        @import url("https://use.typekit.net/xbv3jvp.css");
+        body {
+          background-color: #f8f8f8;
+        }
+        p {
+          padding: 0;
+          margin: 0;
+        }
+        mark {
+          background-color: #595959;
+          color: #fff;
+        }
+        a {
+          text-decoration: none;
+        }
+        a:visited {
+          color: #000;
+        }
+        #container{
+          position:absolute;
+          text-align:center;
+          width: 100%;
+          height: 500px;
+          padding-top: 3em;
+          margin-top: 10%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        #text {
+          line-height: 20px;
+          letter-spacing: 0.5px;
+          font-family: aktiv-grotesk-extended, "Helvetica Neue", Helvetica, "Franklin Gothic", Arial, sans-serif;
+        }
+        #number {
+          font-family: "whitman-display", serif;
+        	font-weight: 700;
+        	font-style: italic;
+          font-size: 6em;
+        }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156829821-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156829821-1');
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <p id="number">0</p>
+      <p id="text"></p>
+    </div>
+
+    <script>
+      window.onclick = revealer;
+      function revealer() {
+        if (counter < currentlen-1) {
+          counter += 1;
+          document.getElementById("text").innerHTML += "<br>"+block[counter];
+        }
+        else if (currentblock < totalstanza-1) {
+          document.getElementById("text").innerHTML = "";
+          document.getElementById("number").innerHTML = "";
+          currentblock += 1;
+          currentlen += stanza[currentblock];
+          document.getElementById("number").innerHTML += currentblock;
+        }
+        else {
+          document.getElementById("text").innerHTML = "<span><br><br><a href='https://www.rencewang.com'>GOODBYE</a></span>";
+          document.getElementById("number").innerHTML = "";
+          //display an image
+        }
+      }
+
+      var stanza = [4, 7, 1, 6, 5, 5, 5, 2, 3];
+      var counter = -1;
+      var currentblock = 0;
+      var currentlen = 4;
+      var totalstanza = stanza.length;
+
+      var block = [
+        "To Ask <b>Why We Fight</b>?",
+        "If it's the best",
+        "pass the test,",
+        "then <mark><i>yes</i></mark>.",
+
+        "Last couple of years have been <b>a mad trip</b>.",
+        "I've been a <b>Ferrari</b>.",
+        "Going too fast to see",
+        "all the <small>good things</small> in front of me.",
+        "And the <i>wicked cadavers</i>,",
+        "the <i>portraits in the attic</i>,",
+        "not ready to be found.",
+
+        "<i>Because</i> <b>terrors</b> <i>don't prey on</i> <b>innocent</b> <i>victims.</i>",
+
+        "<i>But who will save my young blood?</i>",
+        "Swallowing <mark>nostalgia</mark>.",
+        "chasing it with lime.",
+        "Don't help me forget",
+        "<b>the <small>ordinary</small> things I'd been,<b>",
+        "<b>the <small>ordinary</small> tears I'd spent.</b>",
+
+        "Are we <i>ever</i> ready to see ourselves for who we are?",
+        "True bliss is <small>not knowing</small> who we are.",
+        "<b>Is it safe? Is it safe to be who we are?</b>",
+        "But we're not what we thought we are.",
+        "<i>We don't know who we thought we are.</i>",
+
+        "Then go get <mark>running</mark>, go get <mark>hurry</mark>.",
+        "While it's <b><i>light out</i></b>, while it's <b><i>early</i></b>.",
+        "Before I start to <small>miss</small>,",
+        "<i>any</i> part of this,",
+        "and change my mind <b>forever</b>.",
+
+        "So I'll <b>pick the truth</b> I believe in",
+        "like a bad religion.",
+        "And I'll take away the matches",
+        "before fire could catch me.",
+        "<i>So don't look now.</i>",
+
+        "<b>那条没完没了的路</b><br>All that road going",
+        "<b>一切怀有梦想的人</b><br>All the people dreaming",
+
+        "May the world continue to be <i>lovely</i>.",
+        "<b>May I always be mine.</b>",
+        "<small>So help me god.</small>"
+      ];
+    </script>
+
+  </body>
+</html>
