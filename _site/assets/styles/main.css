@@ -1,37 +1,37 @@
 @import url("https://use.typekit.net/pbz7uek.css");
-@font-face { font-family: "Basis Grotesque Pro Black"; src: url("/assets/fonts/Basis-Grotesque-Pro-Black.otf") format("otf"); font-weight: 900; font-style: normal; }
+@font-face { font-family: "Basis Grotesque Pro Black"; src: url("/assets/fonts/Basis-Grotesque-Pro-Black.woff") format("woff"); font-weight: 900; font-style: normal; }
 
-@font-face { font-family: "Basis Grotesque Pro Black"; src: url("/assets/fonts/Basis-Grotesque-Pro-Black-Italic.otf") format("otf"); font-weight: 900; font-style: italic; }
+@font-face { font-family: "Basis Grotesque Pro Black"; src: url("/assets/fonts/Basis-Grotesque-Pro-Black-Italic.woff") format("woff"); font-weight: 900; font-style: italic; }
 
-@font-face { font-family: "GT America Extended Bold"; src: url("/assets/fonts/GT-America-Extended-Bold.otf") format("otf"); font-weight: bold; font-style: normal; }
+@font-face { font-family: "GT America Extended Bold"; src: url("/assets/fonts/GT-America-Extended-Bold.woff") format("woff"); font-weight: bold; font-style: normal; }
 
-@font-face { font-family: "GT America Extended Bold"; src: url("/assets/fonts/GT-America-Extended-Bold-Italic.otf") format("otf"); font-weight: bold; font-style: italic; }
+@font-face { font-family: "GT America Extended Bold"; src: url("/assets/fonts/GT-America-Extended-Bold-Italic.woff") format("woff"); font-weight: bold; font-style: italic; }
 
-@font-face { font-family: "GT America Extended Medium"; src: url("/assets/fonts/GT-America-Extended-Medium.otf") format("otf"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "GT America Extended Medium"; src: url("/assets/fonts/GT-America-Extended-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
 
-@font-face { font-family: "GT America Extended Medium"; src: url("/assets/fonts/GT-America-Extended-Medium-Italic.otf") format("otf"); font-weight: 500; font-style: italic; }
+@font-face { font-family: "GT America Extended Medium"; src: url("/assets/fonts/GT-America-Extended-Medium-Italic.woff") format("woff"); font-weight: 500; font-style: italic; }
 
-@font-face { font-family: "GT America Expanded Light"; src: url("/assets/fonts/GT-America-Expanded-Light.otf") format("otf"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "GT America Expanded Light"; src: url("/assets/fonts/GT-America-Expanded-Light.woff") format("woff"); font-weight: 300; font-style: normal; }
 
-@font-face { font-family: "GT America Expanded Light"; src: url("/assets/fonts/GT-America-Expanded-Light-Italic.otf") format("otf"); font-weight: 300; font-style: italic; }
+@font-face { font-family: "GT America Expanded Light"; src: url("/assets/fonts/GT-America-Expanded-Light-Italic.woff") format("woff"); font-weight: 300; font-style: italic; }
 
-@font-face { font-family: "GT America Expanded Black"; src: url("/assets/fonts/GT-America-Expanded-Black.otf") format("otf"); font-weight: 900; font-style: normal; }
+@font-face { font-family: "GT America Expanded Black"; src: url("/assets/fonts/GT-America-Expanded-Black.woff") format("woff"); font-weight: 900; font-style: normal; }
 
-@font-face { font-family: "GT America Expanded Black"; src: url("/assets/fonts/GT-America-Expanded-Black-Italic.otf") format("otf"); font-weight: 900; font-style: italic; }
+@font-face { font-family: "GT America Expanded Black"; src: url("/assets/fonts/GT-America-Expanded-Black-Italic.woff") format("woff"); font-weight: 900; font-style: italic; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular.otf"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular.woff"); font-weight: 400; font-style: normal; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular-Oblique.otf"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular-Oblique.woff"); font-weight: 400; font-style: italic; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtBold.otf"); font-weight: bold; font-style: normal; }
+@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtBold.woff"); font-weight: bold; font-style: normal; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtBoldOblique.otf"); font-weight: bold; font-style: italic; }
+@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtBoldOblique.woff"); font-weight: bold; font-style: italic; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtMedium.otf"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtMedium.woff"); font-weight: 500; font-style: normal; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtMediumOblique.otf"); font-weight: 500; font-style: italic; }
+@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtMediumOblique.woff"); font-weight: 500; font-style: italic; }
 
-@font-face { font-family: "Millionaire Script"; src: url("../assets/fonts/Millionaire-Script.otf"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "Millionaire Script"; src: url("../assets/fonts/Millionaire-Script.woff"); font-weight: 300; font-style: normal; }
 
 /* 12columns.css | Created by Katherine Kato | Released under the MIT license */
 .grid { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-flow: row wrap; flex-flow: row wrap; }
