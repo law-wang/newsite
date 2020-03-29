@@ -1,10 +1,9 @@
 # Site
 title: "Lawrence Wang"
-name: "Lawrence Wang"
 description: ""
 favicon: "assets/images/favicon.ico"
-url: "http://www.law-wang.com"
-baseurl: "http://www.law-wang.com"
+url: "http://www.rencewang.com"
+baseurl: "http://www.rencewang.com"
 
 # Plugins
 plugins:
@@ -12,3 +11,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+
+assets:
+  sources:
+    - assets
+    - assets/images
+    - assets/scripts
+    - assets/styles
+    - assets/fonts
