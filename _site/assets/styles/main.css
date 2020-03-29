@@ -366,7 +366,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 .post-container { order: 2; width: 100%; flex-basis: auto; overflow-y: scroll; overflow-x: hidden; }
 
-.post-container .post-title { width: 100%; font-family: "Millionaire Script", serif; font-weight: 300; text-transform: uppercase; font-size: 40px; text-align: right; padding: 10px 15px 0 10px; }
+.post-container .post-title { width: 100%; font-family: "Millionaire Script", poetica-std, serif; font-weight: 300; text-transform: uppercase; font-size: 40px; text-align: right; padding: 10px 15px 0 10px; }
 
 @media only screen and (max-width: 650px) { .post-container .post-title { font-size: 33px; } }
 
@@ -435,7 +435,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .readmore-links { font-size: 20px; } }
 
-.archive { padding: 8px 5px 0 20px; font-family: "Millionaire Script", serif; font-weight: 300; text-transform: uppercase; font-size: 40px; }
+.archive { padding: 8px 5px 0 20px; font-family: "Millionaire Script", poetica-std, serif; font-weight: 300; text-transform: uppercase; font-size: 40px; }
 
 @media only screen and (max-width: 650px) { .archive { font-size: 35px; } }
 
@@ -444,7 +444,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 /* Accordion Set Up */
 input { display: none; }
 
-input + label { display: block; position: relative; padding: 10px 20px 0 20px; font-family: "Millionaire Script", serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
+input + label { display: block; position: relative; padding: 10px 20px 0 20px; font-family: "Millionaire Script", poetica-std, serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
 
 @media only screen and (max-width: 650px) { input + label { font-size: 35px; } }
 
@@ -497,7 +497,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid .projectpost-nav .projpost-nav-title { font-size: 30px; } }
 
-.projectpage-grid .projectpost-nav .projpost-nav-item { font-family: "Millionaire Script", serif; font-size: 20px; text-transform: uppercase; padding: 5px 10px 0 10px; }
+.projectpage-grid .projectpost-nav .projpost-nav-item { font-family: "Millionaire Script", poetica-std, serif; font-size: 20px; text-transform: uppercase; padding: 5px 10px 0 10px; }
 
 .gallery-navigation { width: 100%; display: flex; justify-content: space-between; white-space: nowrap; font-family: "GT America Extended Medium", sans-serif; font-weight: 300; font-size: 50px; text-transform: uppercase; }
 
