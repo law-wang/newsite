@@ -3,8 +3,8 @@ title: "Lawrence Wang"
 name: "Lawrence Wang"
 description: ""
 favicon: "assets/images/favicon.ico"
-url: ""
-baseurl: ""
+url: "http://www.rencewang.com/newsite"
+baseurl: "http://www.rencewang.com/newsite"
 
 # Plugins
 plugins:
