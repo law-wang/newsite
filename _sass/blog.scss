@@ -95,7 +95,7 @@
         grid: auto / 50% 50%;
     }
     @media only screen and (max-width: 650px) {
-        grid: 1fr / 1fr;
+        grid: 100% / 100%;
         grid-template-areas: 
             "content";
     }
