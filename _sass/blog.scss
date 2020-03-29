@@ -16,6 +16,7 @@
     @media only screen and (max-width: 650px) {
         grid-template-columns: 100%;
     }
+
 }
 .item-blog-menu,
 .item-blog-description,
@@ -33,22 +34,14 @@
 }
 .item-blog-description {
     grid-area: "description";
-    font-family: $bodytextfont;
-        font-weight: normal;
-        font-size: 60px;
-        line-height: 1.2em;
-        text-align: right;
-    p {
-        margin: 0;
-        padding: 10px 15px 10px 10px;
-    }
     @media only screen and (max-width: 650px) {
         display: none;
     }
 }
 
 /* Menu ONLY */
-.blog-menu {
+.blog-menu, 
+.blogfeatured {
     .menu-category-name {
         font-family: $projectHeaderFont;
             font-size: 50px;
@@ -76,6 +69,12 @@
         h5 {
             margin: 0;
             padding: 5px;
+        }
+    }
+    .mobile-featured {
+        display: none;
+        @media only screen and (max-width: 650px) {
+            display: block;
         }
     }
 }
@@ -137,6 +136,9 @@
             text-align: right;
         margin-top: -5px;
         padding: 0 15px 5px 10px;
+        @media only screen and (max-width: 650px) {
+            font-size: 15px;
+        }
     }
 }
 
