@@ -73,50 +73,49 @@
 
 @font-face {
     font-family: "AT Surt Regular";
-    src: url('/assets/fonts/AT-Surt-Regular.woff');
+    src: url('/assets/fonts/AT-Surt-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "AT Surt Regular";
-    src: url('/assets/fonts/AT-Surt-Regular-Oblique.woff');
+    src: url('/assets/fonts/AT-Surt-Regular-Oblique.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: "AT Surt Regular";
-    src: url('../assets/fonts/ATSurtBold.woff');
+    src: url('/assets/fonts/AT-Surt-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "AT Surt Regular";
-    src: url('../assets/fonts/ATSurtBoldOblique.woff');
+    src: url('/assets/fonts/AT-Surt-bold-oblique.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "AT Surt Regular";
-    src: url('../assets/fonts/ATSurtMedium.woff');
+    src: url('/assets/fonts/ATSurtMedium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "AT Surt Regular";
-    src: url('../assets/fonts/ATSurtMediumOblique.woff');
+    src: url('/assets/fonts/ATSurtMediumOblique.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Millionaire Script";
-    src:    url('../assets/fonts/Millionaire-Script.woff2') format('woff2'),
-            url('../assets/fonts/Millionaire-Script.woff') format('woff');
+    src: url('/assets/fonts/Millionaire-Script.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
