@@ -1,0 +1,195 @@
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>breathe | Lawrence Wang</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon-1.png"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <style>
+    @import url("https://use.typekit.net/xbv3jvp.css");
+
+    body {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        cursor: cell;
+        height: 100%;
+        width: 100%;
+    }
+    .overall {
+        overflow: hidden;
+    }
+    #ct, #name {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        text-shadow: 0 0 130px #000;
+        transition: opacity 1s ease;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 13em;
+        text-align: center;
+    }
+    #ct {
+        font-family: odisseia, sans-serif;
+        letter-spacing: -10px;
+    }
+    #name {
+        font-family: aktiv-grotesk-extended, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: normal;
+    }
+    @media screen and (max-width: 900px) {
+        #ct, #name {
+            font-size: 8em;
+            letter-spacing: normal;
+	    }
+    }
+    @media screen and (max-width: 650px) {
+        #ct, #name {
+            font-size: 5em;
+            letter-spacing: normal;
+	    }
+    }
+    div#clock span#ct { opacity: 1; }
+    div#clock:hover span#ct { opacity: 0; }
+    div#clock span#name { opacity: 0; }
+    div#clock:hover span#name { opacity: 1; }
+    .caption {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        font-family: aktiv-grotesk-extended, sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+    }
+    @media screen and (max-width: 550px) {
+        .caption {
+            font-size: 20px;
+        }
+        #ct, #name {
+            font-size: 3.5em;
+	    }
+    }
+
+    .text-changer {
+        -webkit-animation: text-change 7s infinite;
+        -moz-animation: text-change 7s infinite;
+        -o-animation: text-change 7s infinite;
+        -ms-animation: text-change 7s infinite;
+        animation: text-change 7s infinite;
+    }
+    @-webkit-keyframes text-change {
+        0% { color: #f8f8f8; }
+        50% { color: #404040; }
+        100% { color: #f8f8f8; }
+    }
+    @-moz-keyframes text-change {
+        0% { color: #f8f8f8; }
+        50% { color: #404040; }
+        100% { color: #f8f8f8; }
+    }
+    @-ms-keyframes text-change {
+        0% { color: #f8f8f8; }
+        50% { color: #404040; }
+        100% { color: #f8f8f8; }
+    }
+    @-o-keyframes text-change {
+        0% { color: #f8f8f8; }
+        50% { color: #404040; }
+        100% { color: #f8f8f8; }
+    }
+    @keyframes text-change {
+        0% { color: #f8f8f8; }
+        50% { color: #404040; }
+        100% { color: #f8f8f8; }
+    }
+
+    .bgcolor-changer {
+        -webkit-animation: bgcolor-change 10s infinite;
+        -moz-animation: bgcolor-change 10s infinite;
+        -o-animation: bgcolor-change 10s infinite;
+        -ms-animation: bgcolor-change 10s infinite;
+        animation: bgcolor-change 10s infinite;
+    }
+    @-webkit-keyframes bgcolor-change {
+        0% { background-color: #f8f8f8; }
+        50% { background-color: #000; }
+        100% { background-color: #f8f8f8; }
+    }
+    @-moz-keyframes bgcolor-change {
+        0% { background-color: #f8f8f8; }
+        50% { background-color: #000; }
+        100% { background-color: #f8f8f8; }
+    }
+    @-ms-keyframes bgcolor-change {
+        0% { background-color: #f8f8f8; }
+        50% { background-color: #000; }
+        100% { background-color: #f8f8f8; }
+    }
+    @-o-keyframes bgcolor-change {
+        0% { background-color: #f8f8f8; }
+        50% { background-color: #000; }
+        100% { background-color: #f8f8f8; }
+    }
+    @keyframes bgcolor-change {
+        0% { background-color: #f8f8f8; }
+        50% { background-color: #000; }
+        100% { background-color: #f8f8f8; }
+    }
+  </style>
+
+  <!-- Clock Script -->
+  <script>
+    function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
+    }
+    function display_ct() {
+        var x = new Date();
+        var hours = (x.getHours() < 10? '0' : '') + x.getHours();
+        var minutes = (x.getMinutes() < 10? '0' : '') + x.getMinutes();
+        var seconds = (x.getSeconds() < 10? '0' : '') + x.getSeconds();
+        var time = hours + ":" +  minutes + ":" +  seconds;
+        document.getElementById('ct').innerHTML = time;
+        display_c();
+    }
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156829821-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-156829821-1');
+  </script>
+</head>
+
+<body class="bgcolor-changer" onload = "display_ct();">
+  <div class="overall">
+
+    <!-- CLOCK BLOCK -->
+    <div class="text-changer" id="clock">
+      <span id='ct'></span><span id="name">breathe</span>
+    </div>
+
+    <div class="caption text-changer"><p><i>&uarr; a reminder to breathe</i></p></div>
+
+  </div>
+
+  <script>
+    $(window).on("load", function() {
+      $(".loader").fadeOut("500000");
+    });
+  </script>
+
+</body>
+</html>

@@ -19,19 +19,19 @@
 
 @font-face { font-family: "GT America Expanded Black"; src: url("/assets/fonts/GT-America-Expanded-Black-Italic.woff") format("woff"); font-weight: 900; font-style: italic; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular.woff"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular.woff") format("woff"); font-weight: 400; font-style: normal; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular-Oblique.woff"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Regular-Oblique.woff") format("woff"); font-weight: 400; font-style: italic; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtBold.woff"); font-weight: bold; font-style: normal; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-Bold.woff") format("woff"); font-weight: bold; font-style: normal; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtBoldOblique.woff"); font-weight: bold; font-style: italic; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/AT-Surt-bold-oblique.woff") format("woff"); font-weight: bold; font-style: italic; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtMedium.woff"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/ATSurtMedium.woff") format("woff"); font-weight: 500; font-style: normal; }
 
-@font-face { font-family: "AT Surt Regular"; src: url("../assets/fonts/ATSurtMediumOblique.woff"); font-weight: 500; font-style: italic; }
+@font-face { font-family: "AT Surt Regular"; src: url("/assets/fonts/ATSurtMediumOblique.woff") format("woff"); font-weight: 500; font-style: italic; }
 
-@font-face { font-family: "Millionaire Script"; src: url("../assets/fonts/Millionaire-Script.woff2") format("woff2"), url("../assets/fonts/Millionaire-Script.woff") format("woff"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "Millionaire Script"; src: url("/assets/fonts/Millionaire-Script.woff") format("woff"); font-weight: 300; font-style: normal; }
 
 /* 12columns.css | Created by Katherine Kato | Released under the MIT license */
 .grid { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-flow: row wrap; flex-flow: row wrap; }
@@ -521,7 +521,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 @media only screen and (max-width: 400px) { .gallery-navigation { font-size: 20px; } }
 
-.gallery-container { width: 100%; padding: 10px; margin: 0; max-width: 1500px; }
+.gallery-container { width: 100%; padding: 10px; margin: 0 auto; max-width: 1500px; }
 
 .gallery-container figure { margin: 0; }
 
