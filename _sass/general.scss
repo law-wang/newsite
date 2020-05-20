@@ -76,6 +76,16 @@ body {
 .yesscroll {
   overflow-y: scroll;
 }
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 3px 0 3px 0;
+  }
+}
 
 /* Preloader ONLY */
 .loader {
