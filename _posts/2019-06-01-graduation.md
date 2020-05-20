@@ -9,6 +9,8 @@ image: /assets/images/graduation.jpg
 permalink: "/blog/graduation"
 ---
 
+![Cover](/assets/images/blog/graduation.jpg)
+
 Ladies and gentlemen, teachers, administrators, Class of 2019:  <br><br>
 Good evening. It is an absolute honor to be here. Six years ago, when I arrived in America, quite literally “fresh off the boat,” I never imagined I would be standing here. When I first stepped foot on Troy’s campus, I was entirely clueless about my future. Now, standing here at graduation, I know exactly the direction I'm going in life! Just kidding, I’m just as clueless as freshman year, but I do know that my experiences at Troy will serve as the foundation of whatever I decide to do in the future.
 
@@ -31,6 +33,5 @@ So don't become discouraged when the suffocating reality comes crashing down. So
 Thank you for all the memories, Class of 2019, I am so glad to have had all of you.
 
 <div class="divider"></div>
-![Cover](/assets/images/blog/graduation.jpg)
 
 _Delivered May 31, 2019 at Troy High School's Commencement Ceremony as valedictorian for the Class of 2019._
