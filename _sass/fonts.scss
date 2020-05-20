@@ -119,3 +119,51 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Capsule Sans Regular";
+    src:    url('/assets/fonts/CapsuleSansText-Book.woff') format('woff'),
+            url('/assets/fonts/CapsuleSansText-Book.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Capsule Sans Regular";
+    src:    url('/assets/fonts/CapsuleSansText-BookItalic.woff') format('woff'),
+            url('/assets/fonts/CapsuleSansText-BookItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Capsule Sans Medium";
+    src:    url('/assets/fonts/CapsuleSansText-Medium.woff') format('woff'),
+            url('/assets/fonts/CapsuleSansText-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Capsule Sans Medium";
+    src:    url('/assets/fonts/CapsuleSansText-MediumItalic.woff') format('woff'),
+            url('/assets/fonts/CapsuleSansText-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Capsule Sans Bold";
+    src:    url('/assets/fonts/CapsuleSansText-Bold.woff') format('woff'),
+            url('/assets/fonts/CapsuleSansText-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Capsule Sans Bold";
+    src:    url('/assets/fonts/CapsuleSansText-BoldItalic.woff') format('woff'),
+            url('/assets/fonts/CapsuleSansText-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
