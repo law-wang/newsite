@@ -82,8 +82,10 @@ footer {
   width: 100%;
   text-align: center;
   p {
+    font-family: $bodytextfont;
+    font-size: 15px;
     margin: 0;
-    padding: 3px 0 3px 0;
+    padding: 0;
   }
 }
 
@@ -110,5 +112,27 @@ footer {
   transition: all 0.5s linear;
   &:hover {
     background-color: $linkhover;
+  }
+}
+
+/* Footer ONLY */
+@keyframes footerText {
+  0% { content: "love"; color: black; }
+  10% { color: white; }
+  20% { content: "$$$"; color: black; }
+  30% { color: white; }
+  40% { content: "time"; color: black; }
+  50% { color: white; }
+  60% { content: "定境"; color: black; }
+  70% { color: white; }
+  80% { content: "⌘"; color: black; }
+  90% { color: white; }
+  100% { content: "举世盛名"; color: black; }
+}
+.footer-changer {
+  &:after {
+    animation: footerText 20s linear infinite alternate;
+    content: "love";
+    font-size: 15px;
   }
 }
