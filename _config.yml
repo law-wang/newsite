@@ -5,7 +5,6 @@ description: ""
 favicon: "/assets/images/favicon.ico"
 url: "https://www.rencewang.com"
 baseurl: "https://www.rencewang.com"
-# url: "/"
 
 # Plugins
 plugins:
