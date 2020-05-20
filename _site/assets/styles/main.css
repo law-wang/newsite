@@ -33,6 +33,18 @@
 
 @font-face { font-family: "Millionaire Script"; src: url("/assets/fonts/Millionaire-Script.woff") format("woff"); font-weight: 300; font-style: normal; }
 
+@font-face { font-family: "Capsule Sans Regular"; src: url("/assets/fonts/CapsuleSansText-Book.woff") format("woff"), url("/assets/fonts/CapsuleSansText-Book.woff2") format("woff2"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: "Capsule Sans Regular"; src: url("/assets/fonts/CapsuleSansText-BookItalic.woff") format("woff"), url("/assets/fonts/CapsuleSansText-BookItalic.woff2") format("woff2"); font-weight: 300; font-style: italic; }
+
+@font-face { font-family: "Capsule Sans Regular"; src: url("/assets/fonts/CapsuleSansText-Medium.woff") format("woff"), url("/assets/fonts/CapsuleSansText-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; }
+
+@font-face { font-family: "Capsule Sans Regular"; src: url("/assets/fonts/CapsuleSansText-MediumItalic.woff") format("woff"), url("/assets/fonts/CapsuleSansText-MediumItalic.woff2") format("woff2"); font-weight: 500; font-style: italic; }
+
+@font-face { font-family: "Capsule Sans Regular"; src: url("/assets/fonts/CapsuleSansText-Bold.woff") format("woff"), url("/assets/fonts/CapsuleSansText-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+
+@font-face { font-family: "Capsule Sans Regular"; src: url("/assets/fonts/CapsuleSansText-BoldItalic.woff") format("woff"), url("/assets/fonts/CapsuleSansText-BoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; }
+
 /* 12columns.css | Created by Katherine Kato | Released under the MIT license */
 .grid { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-flow: row wrap; flex-flow: row wrap; }
 
@@ -170,7 +182,7 @@
 
 *::before, *::after { box-sizing: border-box; }
 
-body { background: #e6e6e6; color: #000000; font-family: "aktiv-grotesk", sans-serif; }
+body { background: #f2f2f2; color: #000000; font-family: "aktiv-grotesk", sans-serif; }
 
 /* Global Styling */
 a { text-decoration: none; color: #000000; transition: all 0.3s linear; }
@@ -215,7 +227,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .header-container-grid { grid: 30px 70px 50px 50px / 1fr 1fr; border: none; grid-gap: 5px; grid-template-areas: "banner banner" "title title" "navigation navigation" "navigation navigation"; } }
 
-.grid-item { background-color: #e6e6e6; overflow: hidden; }
+.grid-item { background-color: #f2f2f2; overflow: hidden; }
 
 .item-banner { grid-area: banner; }
 
@@ -277,7 +289,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 .about-block { width: 80%; max-width: 1500px; margin: 20px 15px 20px auto; text-align: right; }
 
-.about-block p { margin-top: 0; margin-bottom: 0; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 60px; line-height: 1.2em; }
+.about-block p { margin-top: 0; margin-bottom: 0; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 60px; line-height: 1.2em; }
 
 .about-block p a { font-family: "GT America Extended Medium", sans-serif; font-weight: 500px; text-transform: uppercase; }
 
@@ -328,7 +340,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .blog { grid-template-columns: 100%; } }
 
-.item-blog-menu, .item-blog-description, .item-post-content { background-color: #e6e6e6; height: 100%; overflow-x: hidden; overflow-y: auto; }
+.item-blog-menu, .item-blog-description, .item-post-content { background-color: #f2f2f2; height: 100%; overflow-x: hidden; overflow-y: auto; }
 
 @media only screen and (max-width: 650px) { .item-blog-menu, .item-blog-description, .item-post-content { height: auto; } }
 
@@ -377,7 +389,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 @media only screen and (max-width: 650px) { .post-container .post-info { font-size: 15px; } }
 
 /* Blog Content Styling */
-.post-content { width: 100%; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
+.post-content { width: 100%; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
 
 .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 { font-family: "GT America Extended Medium", sans-serif; }
 
@@ -394,9 +406,9 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 .post-content code { font-family: zeitung-mono, roboto, sans-serif; font-size: 18px; }
 
 /* Navigation Styling */
-.post-navigation { order: 1; width: 100%; flex-basis: 20px; background-color: #e6e6e6; z-index: 100; }
+.post-navigation { order: 1; width: 100%; flex-basis: 20px; background-color: #f2f2f2; z-index: 100; }
 
-.post-navigation a { font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 15px; margin: 5px 0; }
+.post-navigation a { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 15px; margin: 5px 0; }
 
 .post-navigation a:hover { color: #000000; }
 
@@ -423,7 +435,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .project .project-header { text-align: center; } }
 
-.project-grouping, .fun-things-grouping { background-color: #e6e6e6; height: 100%; overflow-x: hidden; overflow-y: auto; }
+.project-grouping, .fun-things-grouping { background-color: #f2f2f2; height: 100%; overflow-x: hidden; overflow-y: auto; }
 
 @media only screen and (max-width: 650px) { .project-grouping, .fun-things-grouping { height: auto; } }
 
@@ -464,7 +476,7 @@ input ~ div { height: 1px; padding: 0 10px; overflow: hidden; }
 
 input ~ div > * { opacity: 0; transition: 1s; }
 
-input ~ div > p { padding: 0; margin: 0; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 30px; line-height: 1.25em; }
+input ~ div > p { padding: 0; margin: 0; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 30px; line-height: 1.25em; }
 
 @media only screen and (max-width: 650px) { input ~ div > p { font-size: 20px; } }
 
@@ -483,7 +495,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 .projectpage-grid { height: 100%; grid-gap: 10px; background-color: #000000; }
 
-.projectpage-grid > div { background-color: #e6e6e6; height: 100%; overflow-x: hidden; overflow-y: scroll; }
+.projectpage-grid > div { background-color: #f2f2f2; height: 100%; overflow-x: hidden; overflow-y: scroll; }
 
 @media only screen and (max-width: 62rem) { .projectpage-grid { height: auto; } }
 
@@ -493,7 +505,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid .projectpost-title { font-size: 30px; } }
 
-.projectpage-grid .projectpost-content { padding: 0 10px; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 22px; }
+.projectpage-grid .projectpost-content { padding: 0 10px; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 22px; }
 
 .projectpage-grid .projectpost-nav { width: 100%; }
 
@@ -539,7 +551,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 .content-details .content-title { font-family: "GT America Extended Medium", sans-serif; font-size: 30px; padding-bottom: 15px; text-transform: uppercase; margin: 0; }
 
-.content-details .content-text { font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; text-align: justify; font-size: 15px; margin: 0 auto; max-width: 400px; }
+.content-details .content-text { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; text-align: justify; font-size: 15px; margin: 0 auto; max-width: 400px; }
 
 @media only screen and (max-width: 650px) { .content-details { display: none; } }
 
