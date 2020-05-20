@@ -256,7 +256,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 /* Marquee ONLY */
 .marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
 
-.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 25s linear infinite; }
+.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 30s linear infinite; }
 
 @media only screen and (max-width: 650px) { .marquee span { font-size: 20px; } }
 
@@ -344,7 +344,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .item-blog-menu, .item-blog-description, .item-post-content { height: auto; } }
 
-.item-blog-menu { grid-area: "blog-menu"; }
+.item-blog-menu { grid-area: "blog-menu"; margin-right: 10px; }
 
 .item-blog-description { grid-area: "description"; }
 
@@ -501,13 +501,13 @@ label:hover { cursor: help; color: #cc1100; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid { grid-gap: 5px; } }
 
-.projectpage-grid .projectpost-title { font-family: "GT America Expanded Black", sans-serif; font-size: 40px; text-transform: uppercase; padding: 5px 10px; }
+.projectpage-grid .projectpost-title { font-family: "GT America Expanded Black", sans-serif; font-size: 40px; text-transform: uppercase; padding: 5px 10px; overflow: hidden; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid .projectpost-title { font-size: 30px; } }
 
-.projectpage-grid .projectpost-content { padding: 0 10px; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 22px; }
+.projectpage-grid .projectpost-content { padding: 0 10px; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 22px; overflow-y: scroll; }
 
-.projectpage-grid .projectpost-nav { width: 100%; }
+.projectpage-grid .projectpost-nav { width: 100%; overflow-x: hidden; overflow-y: auto; }
 
 .projectpage-grid .projectpost-nav .projpost-nav-title { width: 100%; font-family: "GT America Extended Medium", sans-serif; font-size: 40px; padding: 0 10px; }
 

@@ -23,12 +23,12 @@
         {% include header.html %}
       </header>
 
-      {% if page.title == "Home"%}
-        <main class="overall-content noscroll">
+      {% if page.title == "About" or page.title == "Traditional" or page.title == "Design" or page.title == "Digital" %}
+        <main class="overall-content yesscroll">
           {{ content }}
         </main>
       {% else %}
-        <main class="overall-content yesscroll">
+        <main class="overall-content noscroll">
           {{ content }}
         </main>
       {% endif %}
