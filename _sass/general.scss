@@ -77,6 +77,18 @@ body {
 .yesscroll {
   overflow-y: scroll;
 }
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  p {
+    font-family: $bodytextfont;
+    font-size: 15px;
+    margin: 0;
+    padding: 2px 0;
+  }
+}
 
 /* Preloader ONLY */
 .loader {
@@ -101,5 +113,27 @@ body {
   transition: all 0.5s linear;
   &:hover {
     background-color: $linkhover;
+  }
+}
+
+/* Footer ONLY */
+@keyframes footerText {
+  0% { content: "love"; color: black; }
+  10% { color: rgba(255, 0, 0, 0); }
+  20% { content: "$$$"; color: black; }
+  30% { color: rgba(255, 0, 0, 0); }
+  40% { content: "time"; color: black; }
+  50% { color: rgba(255, 0, 0, 0); }
+  60% { content: "定境"; color: black; }
+  70% { color: rgba(255, 0, 0, 0); }
+  80% { content: "⌘"; color: black; }
+  90% { color: rgba(255, 0, 0, 0); }
+  100% { content: "举世盛名"; color: black; }
+}
+.footer-changer {
+  &:after {
+    animation: footerText 20s linear infinite alternate;
+    content: "love";
+    font-size: 15px;
   }
 }
