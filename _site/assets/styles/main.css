@@ -279,7 +279,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 @media only screen and (max-width: 550px) { .header-title { font-size: 50px; } }
 
-/* Marquee ONLY */
+/* Banner ONLY */
 .marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
 
 .marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 30s linear infinite; }
@@ -289,16 +289,13 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 @keyframes marquee { 0% { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); } }
 
-/* Draggable Text ONLY */
-.draggable { margin: 0; position: relative; overflow: hidden; cursor: col-resize; user-select: none; }
+.scroll-banner { margin: 0; position: relative; overflow: auto; cursor: col-resize; user-select: none; }
 
-.draggable.nodrag { cursor: default; user-select: none; }
+.scroll-banner .banner-inner { white-space: nowrap; display: inline-block; padding: 0 10px; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
 
-.draggable .draggable-wrap { white-space: nowrap; position: relative; left: 0px; }
+@media only screen and (max-width: 650px) { .scroll-banner .banner-inner { font-size: 20px; padding: 3px 10px 0 10px; } }
 
-.draggable .draggable-inner { display: inline-block; padding: 0 10px; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
-
-.draggable.left:before, .draggable.right:after { display: none; }
+.scroll-banner::-webkit-scrollbar { width: 0px; /* background: transparent; */ }
 
 /* Functional Classes ONLY */
 .border-bottom, .mobile-border-bottom, .mobile-border-top, .border-top, .border-right, .mobile-border-right { box-sizing: border-box; }

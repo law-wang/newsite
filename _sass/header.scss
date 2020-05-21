@@ -95,7 +95,7 @@
   }
 }
 
-/* Marquee ONLY */
+/* Banner ONLY */
 .marquee {
   white-space: nowrap;
   overflow: hidden;
@@ -124,34 +124,28 @@
     transform: translate(-100%, 0);
   }
 }
-
-/* Draggable Text ONLY */
-.draggable {
+.scroll-banner {
   margin: 0;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   cursor: col-resize;
   user-select: none;
-  &.nodrag {
-    cursor: default;
-    user-select: none;
-  }
-  .draggable-wrap {
+  .banner-inner {
     white-space: nowrap;
-    position: relative;
-    left: 0px;
-  }
-  .draggable-inner {
     display: inline-block;
     padding: 0 10px;
     font-family: $marqueefont;
       font-weight: 300;
       font-size: 40px;
       text-transform: uppercase;
+    @media only screen and (max-width: 650px) {
+      font-size: 20px;
+      padding: 3px 10px 0 10px;
+    }
   }
-  &.left:before,
-  &.right:after {
-    display: none;
+  &::-webkit-scrollbar {
+    width: 0px; 
+    /* background: transparent; */
   }
 }
 
