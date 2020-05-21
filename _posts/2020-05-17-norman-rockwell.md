@@ -19,6 +19,7 @@ When Mariners Apartment Complex first dropped, I can’t say that I wasn't overw
 > As I whisper in your ear:  
 > I'm always going to be right here  
 > No one's going anywhere  
+
 It paints a comforting picture, one of yearning and promise — it makes me feel like I'm wrapped in a luxurious shawl of California sunset while reminiscing what last summer was like and simultaneously dreaming of what this summer could have been.&nbsp;
 
 California is the more complete version of The Next Best American Record, with similar qualities and lyrics that actually tell a story this time. "You don't ever have to be stronger than you really are, you don't ever have to act cooler than you think you should" conveys, through the contrast between an extravagant welcome-back party and someone long gone, a message of carpe diem. Lana misses a lot of things in&nbsp;_Norman Fucking Rockwell!_: Long Beach, New York, the music. She misses a "crazy love" and someone who hates the heat and got the blues. It's not hard to understand: she's now in her thirties, no longer the girl who writes solely about decadent youth and superfluous melancholy, so perhaps the album deserves praise from this perspective — growth. Afterall, it's her Best American Record, her personal masterpiece, her passion and truth, memories and wishes.
