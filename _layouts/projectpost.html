@@ -5,7 +5,7 @@ layout: default
 <section class="projectpage">
     <div class="projectpage-grid grid">
 
-        <div class="projectpost-title bgcolor-changer column-xs-12"> {{ page.title }} </div>
+        <div class="projectpost-title bgcolor-changer noselect column-xs-12"> {{ page.title }} </div>
 
         <div class="projectpost-content column-xs-12 column-md-9 column-lg-10"> {{ content }} </div>
 
@@ -29,14 +29,14 @@ layout: default
             {% endfor %}
 
             {% if prev_post %}
-                <div class="projpost-nav-title bgcolor-changer border-bottom">PREV:</div>
+                <div class="projpost-nav-title bgcolor-changer noselect border-bottom">PREV:</div>
                 <div class="projpost-nav-item border-bottom">
                     <a href="{{ prev_post.url }}">{{ prev_post.title }}</a>
                 </div>
             {% endif %}
 
             {% if next_post %}
-                <div class="projpost-nav-title bgcolor-changer border-bottom">NEXT:</div>
+                <div class="projpost-nav-title bgcolor-changer noselect border-bottom">NEXT:</div>
                 <div class="projpost-nav-item border-bottom">
                     <a href="{{ next_post.url }}">{{ next_post.title }}</a>
                 </div>

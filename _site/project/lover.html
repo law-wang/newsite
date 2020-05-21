@@ -38,17 +38,23 @@
 
 
   </head>
-  <body onload = "greeting();">
+  <body onload = "greeting(); dragText();">
     
     <section class="overall">
       
       <header class="overall-header">
         <div class="header-container-grid">
 
-  <div class="item-banner grid-item">
-    <div class="marquee bgcolor-changer">
-      <span class="noselect" id="note"></span>
+  <div class="item-banner grid-item bgcolor-changer">
+    <div class="draggable">
+      <div class="draggable-wrap">
+        <div class="draggable-inner" id="note">
+        </div>
+      </div>
     </div>
+    <!-- <div class="marquee bgcolor-changer">
+      <span class="noselect" id="note"></span>
+    </div> -->
   </div>
 
   <div class="item-navigation grid-item">
@@ -79,7 +85,7 @@
           <section class="projectpage">
     <div class="projectpage-grid grid">
 
-        <div class="projectpost-title bgcolor-changer column-xs-12"> Lover&#58; A Virtual Reality Experience </div>
+        <div class="projectpost-title bgcolor-changer noselect column-xs-12"> Lover&#58; A Virtual Reality Experience </div>
 
         <div class="projectpost-content column-xs-12 column-md-9 column-lg-10"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente obcaecati id enim libero quaerat nihil molestiae fugiat dicta? Quasi laudantium voluptas veniam soluta quos, perspiciatis ducimus enim? Libero, voluptatum.
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente obcaecati id enim libero quaerat nihil molestiae fugiat dicta? Quasi laudantium voluptas veniam soluta quos, perspiciatis ducimus enim? Libero, voluptatum.
@@ -101,14 +107,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente obca
             
 
             
-                <div class="projpost-nav-title bgcolor-changer border-bottom">PREV:</div>
+                <div class="projpost-nav-title bgcolor-changer noselect border-bottom">PREV:</div>
                 <div class="projpost-nav-item border-bottom">
                     <a href="/project/albums">10 Albums of the 2010s</a>
                 </div>
             
 
             
-                <div class="projpost-nav-title bgcolor-changer border-bottom">NEXT:</div>
+                <div class="projpost-nav-title bgcolor-changer noselect border-bottom">NEXT:</div>
                 <div class="projpost-nav-item border-bottom">
                     <a href="/project/hopefuls">The Yale Politic&#58; Presidential Hopefuls</a>
                 </div>
@@ -120,7 +126,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente obca
         </main>
       
 
-      <footer class="border-top bgcolor-changer">
+      <footer class="border-top bgcolor-changer noselect">
         <p>
     &copy; 2020 with <span class="footer-changer"></span> from LA & NH
 </p>

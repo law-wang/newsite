@@ -125,6 +125,36 @@
   }
 }
 
+/* Draggable Text ONLY */
+.draggable {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: col-resize;
+  user-select: none;
+  &.nodrag {
+    cursor: default;
+    user-select: none;
+  }
+  .draggable-wrap {
+    white-space: nowrap;
+    position: relative;
+    left: 0px;
+  }
+  .draggable-inner {
+    display: inline-block;
+    padding: 0 10px;
+    font-family: $marqueefont;
+      font-weight: 300;
+      font-size: 40px;
+      text-transform: uppercase;
+  }
+  &.left:before,
+  &.right:after {
+    display: none;
+  }
+}
+
 /* Functional Classes ONLY */
 .border-bottom,
 .mobile-border-bottom,

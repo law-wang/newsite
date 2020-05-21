@@ -15,7 +15,7 @@
     {% include tracking.html %}
 
   </head>
-  <body onload = "greeting();">
+  <body onload = "greeting(); dragText();">
     
     <section class="overall">
       
@@ -23,7 +23,7 @@
         {% include header.html %}
       </header>
 
-      {% if page.title == "About" or page.title == "Traditional" or page.title == "Design" or page.title == "Digital" %}
+      {% if page.title == "Home" or page.title == "Traditional" or page.title == "Design" or page.title == "Digital" %}
         <main class="overall-content yesscroll">
           {{ content }}
         </main>
@@ -33,7 +33,7 @@
         </main>
       {% endif %}
 
-      <footer class="border-top bgcolor-changer">
+      <footer class="border-top bgcolor-changer noselect">
         {% include footer.html %}
       </footer>
 
