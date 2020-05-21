@@ -128,6 +128,7 @@
 /* Functional Classes ONLY */
 .border-bottom,
 .mobile-border-bottom,
+.mobile-border-top,
 .border-top,
 .border-right,
 .mobile-border-right {
@@ -160,6 +161,9 @@
 @media only screen and (max-width: 650px) {
   .mobile-border-bottom {
     border-bottom: 5px solid black;
+  }
+  .mobile-border-top {
+    border-top: 5px solid black;
   }
   .mobile-border-right {
     border-right: 5px solid black;
