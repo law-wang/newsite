@@ -219,7 +219,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .bgcolor-changer { transition: all 0.5s linear; }
 
-.bgcolor-changer:hover { background-color: #cc1100; }
+.bgcolor-changer:hover { background-color: #cc1100; cursor: alias; }
 
 /* Footer ONLY */
 @keyframes footerText { 0% { content: "love";
@@ -372,7 +372,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 @media only screen and (max-width: 650px) { .item-blog-menu, .item-blog-description, .item-post-content { height: auto; } }
 
-.item-blog-menu { grid-area: "blog-menu"; margin-right: 10px; }
+.item-blog-menu { grid-area: "blog-menu"; }
 
 .item-blog-description { grid-area: "description"; }
 
