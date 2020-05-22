@@ -1,11 +1,15 @@
 <!-- LOADER -->
-<div class="loader" style="display: none;"></div>
+<div class="loader"></div>
 <script>
+  // style="display: none;"
+  // $(window).on("load", function() {
+  //   if (sessionStorage.getItem("loaded") == null){
+  //     $(".loader").show();
+  //     $(".loader").fadeOut("100");
+  //     sessionStorage.setItem("loaded", "seen");
+  //   }
+  // });
   $(window).on("load", function() {
-    if (sessionStorage.getItem("loaded") == null){
-      $(".loader").show();
-      $(".loader").fadeOut("100");
-      sessionStorage.setItem("loaded", "seen");
-    }
+    $(".loader").fadeOut("100");
   });
 </script>
