@@ -45,14 +45,14 @@
       <header class="overall-header">
         <div class="header-container-grid">
 
-  <div class="item-banner grid-item bgcolor-changer">
-    <div class="scroll-banner">
+  <div class="item-banner grid-item">
+    <!-- <div class="scroll-banner">
         <div class="banner-inner" id="note">
         </div>
-    </div>
-    <!-- <div class="marquee bgcolor-changer">
-      <span class="noselect" id="note"></span>
     </div> -->
+    <div class="marquee bgcolor-changer">
+      <span class="noselect" id="note"></span>
+    </div>
   </div>
 
   <div class="item-navigation grid-item">
@@ -132,16 +132,17 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente obca
 
     </section>
 
-    <div class="loader" style="display: hidden;"></div>
-    <script>
-      $(window).on("load", function() {
-        if (localStorage.getItem("loaded") != null){
-          $(".loader").show();
-          $(".loader").fadeOut("100");
-          localStorage.setItem("loaded", "seen");
-        }
-      });
-    </script>
-
+    <!-- LOADER -->
+<div class="loader" style="display: hidden;"></div>
+<script>
+  $(window).on("load", function() {
+    if (localStorage.getItem("loaded") != null){
+      $(".loader").show();
+      $(".loader").fadeOut("100");
+      localStorage.setItem("loaded", "seen");
+    }
+  });
+</script>
+    
   </body>
 </html>

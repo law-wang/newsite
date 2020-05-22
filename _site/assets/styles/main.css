@@ -282,7 +282,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 /* Banner ONLY */
 .marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
 
-.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 30s linear infinite; }
+.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 25s linear infinite; }
 
 @media only screen and (max-width: 650px) { .marquee span { font-size: 20px; } }
 
