@@ -39,7 +39,21 @@
 
     </section>
 
-    {% include loader.html %}
+    <div class="loader"></div>
+    <script>
+        // $(window).on("load", function() {
+        //     $(".loader").fadeOut("100");
+        // });
+        jQuery(window).load(function() {
+            if (sessionStorage.getItem('dontLoad') == null) {
+            jQuery(".loader").fadeOut("100");
+            sessionStorage.setItem('dontLoad', 'true');
+            }
+            else {
+            jQuery(".loader").hide();
+            }
+        });
+    </script>
 
   </body>
 </html>
