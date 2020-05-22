@@ -4,7 +4,7 @@ $containerbg: #000000;
 $linkhover: #cc1100;
 
 $bodyFont: "aktiv-grotesk", sans-serif;
-$navigationfont: "GT America Extended Medium", sans-serif;
+$navigationfont: "GT America Extended Bold", sans-serif;
 $headerfont: "Basis Grotesque Pro Black", sans-serif;
 $marqueefont: "GT America Expanded Light", sans-serif;
 $bodytextfont: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; 
@@ -40,6 +40,12 @@ a {
     color: $linkhover;
     cursor: help;
   }
+}
+img {
+  -webkit-backface-visibility: hidden; 
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
 }
 
 /* Main Sections ONLY */

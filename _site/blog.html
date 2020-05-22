@@ -61,13 +61,14 @@
   </div>
 
   <div class="item-title grid-item">
-    <div class="header-title mobile-hide">
+    <!-- <div class="header-title mobile-hide">
       LAW<br>
       RENCE WANG
     </div>
     <div class="header-title mobile-show">
       RENCE WANG
-    </div>
+    </div> -->
+      <img class="header-title-img" src="/assets/images/title3.gif">
   </div>
 
 </div>
@@ -81,32 +82,74 @@
     <div class="item-blog-description">
         <main class="blogfeatured">
 
-    <h4 class="menu-category-name bgcolor-changer noselect border-bottom" id=""><span>Featured</span></h4>
-    <div class="post-listing">
-        <ul>
-            
-            <li>
-                <h5 class="menu-post-name"><a href="/blog/corona">Corona, College, and Us</a></h5>
-            </li>
-            
-            <li>
-                <h5 class="menu-post-name"><a href="/blog/suburbia">Suburbia</a></h5>
-            </li>
-            
-            <li>
-                <h5 class="menu-post-name"><a href="/blog/lover">Lover&#58; The Evolution of Taylor Swift</a></h5>
-            </li>
-            
-            <li>
-                <h5 class="menu-post-name"><a href="/blog/russian-doll">Russian Doll&#58; It's Hard to Stay Alive</a></h5>
-            </li>
-            
-            <li>
-                <h5 class="menu-post-name"><a href="/blog/graduation">Commencement Address&#58; Lessons I Learned</a></h5>
-            </li>
-            
-        </ul>
+    <h4 class="featured-category-name bgcolor-changer noselect border-bottom" id=""><span>Featured</span></h4>
+    
+    
+
+    <div class="accordionPiece border-bottom">
+        <input type="checkbox" id="1" name="accordion" />
+        <label for="1">Corona, College, and Us</label>
+        <div>
+            <p>The problematic thing about an international public health emergency that forces the closure of schools, restaurants, and social events, aside from the fact that I’ve been rotting away at home and can’t even find solace in the slim chance that I might be able to go to Glastonbury over the...</p>
+            <div class="readmore-links">
+                <a href="/blog/corona" style="text-align: left; float: left;">READ MORE</a>
+            </div>
+        </div>
     </div>
+
+    
+
+    <div class="accordionPiece border-bottom">
+        <input type="checkbox" id="2" name="accordion" />
+        <label for="2">Suburbia</label>
+        <div>
+            <p>When it comes to goodbyes, I’m experienced, or so I thought. Last summer, I said goodbye to skipping school for a Starbucks run under the 90-degree California sun. Before that, I said goodbye to lunch under woven canopies that never stopped the rain from wetting our food. Further back, I...</p>
+            <div class="readmore-links">
+                <a href="/blog/suburbia" style="text-align: left; float: left;">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="accordionPiece border-bottom">
+        <input type="checkbox" id="3" name="accordion" />
+        <label for="3">Lover&#58; The Evolution of Taylor Swift</label>
+        <div>
+            <p>We all remember the vengeful spirit of Taylor Swift. From claiming that “there’s nothing I do better than revenge” to “bandaids don’t fix bullet holes,” a certain part of her discography was dedicated to feuds and lost loves. Just two years ago, Taylor can be seen burning bridges and throwing...</p>
+            <div class="readmore-links">
+                <a href="/blog/lover" style="text-align: left; float: left;">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="accordionPiece border-bottom">
+        <input type="checkbox" id="4" name="accordion" />
+        <label for="4">Russian Doll&#58; It's Hard to Stay Alive</label>
+        <div>
+            <p>You would think that after an entire school year of Nietzsche, Meursault, Godot, Kafka, Hemingway, and Like Water for Chocolate in International Baccalaureate English would be enough absurdist discussion for a while, if not an entire lifetime. But Russian Doll, the extremely odd, extremely beautiful, and extremely thought-provoking delight, proved...</p>
+            <div class="readmore-links">
+                <a href="/blog/russian-doll" style="text-align: left; float: left;">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="accordionPiece border-bottom">
+        <input type="checkbox" id="5" name="accordion" />
+        <label for="5">Commencement Address&#58; Lessons I Learned</label>
+        <div>
+            <p>Ladies and gentlemen, teachers, administrators, Class of 2019: Good evening. It is an absolute honor to be here. Six years ago, when I arrived in America, quite literally “fresh off the boat,” I never imagined I would be standing here. When I first stepped foot on Troy’s campus, I was...</p>
+            <div class="readmore-links">
+                <a href="/blog/graduation" style="text-align: left; float: left;">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    
 
 </main>    
     </div>
@@ -306,14 +349,18 @@
     </section>
 
     <!-- LOADER -->
-<div class="loader" style="display: none;"></div>
+<div class="loader"></div>
 <script>
+  // style="display: none;"
+  // $(window).on("load", function() {
+  //   if (sessionStorage.getItem("loaded") == null){
+  //     $(".loader").show();
+  //     $(".loader").fadeOut("100");
+  //     sessionStorage.setItem("loaded", "seen");
+  //   }
+  // });
   $(window).on("load", function() {
-    if (sessionStorage.getItem("loaded") == null){
-      $(".loader").show();
-      $(".loader").fadeOut("100");
-      sessionStorage.setItem("loaded", "seen");
-    }
+    $(".loader").fadeOut("100");
   });
 </script>
     

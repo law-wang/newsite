@@ -53,9 +53,36 @@
             font-size: 40px;
         }
     }
+    .featured-category-name {
+        font-family: $projectHeaderFont;
+            font-size: 80px;
+            text-transform: uppercase;
+        padding: 8px;
+        line-height: 1.04em;
+        @media only screen and (max-width: 900px) {
+            font-size: 60px;
+        }
+        @media only screen and (max-width: 1050px) {
+            font-size: 50px;
+        }
+        @media only screen and (max-width: 650px) {
+            text-align: center;
+        }
+    }
     h4 {
         margin: 0;
         padding: 0;
+    }
+    .featured-post-name {
+        font-family: $projectTitleFont;
+            text-transform: uppercase;
+            font-size: 40px;
+        @media only screen and (max-width: 650px) {
+            font-size: 35px;
+        }
+        @media only screen and (max-width: 550px) {
+            font-size: 30px;
+        }
     }
     .menu-post-name {
         font-family: $subtitlefont;

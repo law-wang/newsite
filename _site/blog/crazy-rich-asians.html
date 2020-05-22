@@ -65,13 +65,14 @@
   </div>
 
   <div class="item-title grid-item">
-    <div class="header-title mobile-hide">
+    <!-- <div class="header-title mobile-hide">
       LAW<br>
       RENCE WANG
     </div>
     <div class="header-title mobile-show">
       RENCE WANG
-    </div>
+    </div> -->
+      <img class="header-title-img" src="/assets/images/title3.gif">
   </div>
 
 </div>
@@ -327,14 +328,18 @@
     </section>
 
     <!-- LOADER -->
-<div class="loader" style="display: none;"></div>
+<div class="loader"></div>
 <script>
+  // style="display: none;"
+  // $(window).on("load", function() {
+  //   if (sessionStorage.getItem("loaded") == null){
+  //     $(".loader").show();
+  //     $(".loader").fadeOut("100");
+  //     sessionStorage.setItem("loaded", "seen");
+  //   }
+  // });
   $(window).on("load", function() {
-    if (sessionStorage.getItem("loaded") == null){
-      $(".loader").show();
-      $(".loader").fadeOut("100");
-      sessionStorage.setItem("loaded", "seen");
-    }
+    $(".loader").fadeOut("100");
   });
 </script>
     
