@@ -27,6 +27,22 @@
     <link rel="stylesheet" href="../assets/styles/main.css">
     <script type="text/javascript" src="../assets/scripts/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $(window).on("load", function() {
+              function Preloader() {
+                  $(".loader").fadeOut("100");
+              }
+              if (!sessionStorage.getItem('doNotShow')) {
+                  $(".loader").show();
+                  sessionStorage.setItem('doNotShow', true);
+                  Preloader();
+              } else {
+                 $(".loader").hide();
+              }
+          });
+      });
+      </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156829821-1"></script>
 <script>
@@ -326,13 +342,21 @@
 
     </section>
 
-
     <div class="loader"></div>
-<script>
-    $(window).on("load", function() {
-        $(".loader").fadeOut("100");
-    });
-</script>
+    <script>
+        // $(window).on("load", function() {
+        //     $(".loader").fadeOut("100");
+        // });
+        // jQuery(window).on("load", function() {
+        //     if (sessionStorage.getItem('dontLoad') == null) {
+        //     jQuery(".loader").fadeOut("100");
+        //     sessionStorage.setItem('dontLoad', 'true');
+        //     }
+        //     else {
+        //     jQuery(".loader").hide();
+        //     }
+        // });
+    </script>
 
   </body>
 </html>

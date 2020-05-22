@@ -19,10 +19,11 @@
                   $(".loader").fadeOut("100");
               }
               if (!sessionStorage.getItem('doNotShow')) {
+                  $(".loader").show();
                   sessionStorage.setItem('doNotShow', true);
                   Preloader();
               } else {
-                 $ (".loader").hide();
+                 $(".loader").hide();
               }
           });
       });
