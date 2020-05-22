@@ -44,7 +44,7 @@
         // $(window).on("load", function() {
         //     $(".loader").fadeOut("100");
         // });
-        jQuery(window).load(function() {
+        jQuery(window).on("load", function() {
             if (sessionStorage.getItem('dontLoad') == null) {
             jQuery(".loader").fadeOut("100");
             sessionStorage.setItem('dontLoad', 'true');
