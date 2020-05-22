@@ -357,13 +357,13 @@
     </section>
 
     <!-- LOADER -->
-<div class="loader" style="display: hidden;"></div>
+<div class="loader" style="display: none;"></div>
 <script>
   $(window).on("load", function() {
-    if (localStorage.getItem("loaded") != null){
+    if (sessionStorage.getItem("loaded") == null){
       $(".loader").show();
       $(".loader").fadeOut("100");
-      localStorage.setItem("loaded", "seen");
+      sessionStorage.setItem("loaded", "seen");
     }
   });
 </script>
