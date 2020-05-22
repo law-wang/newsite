@@ -1,18 +1,13 @@
 <!-- LOADER -->
-<div class="loader"></div>
+<div class="loader" style="display: hidden;"></div>
 <script>
-    // $(window).on("load", function() {
-    //     $(".loader").fadeOut("100");
-    // });
-    jQuery(window).load(function() {
-        if (sessionStorage.getItem('dontLoad') == null) {
-        jQuery(".loader").fadeOut("100");
-        sessionStorage.setItem('dontLoad', 'true');
-        }
-        else {
-        jQuery(".loader").hide();
-        }
-    });
+  $(window).on("load", function() {
+    if (localStorage.getItem("loaded") != null){
+      $(".loader").show();
+      $(".loader").fadeOut("100");
+      localStorage.setItem("loaded", "seen");
+    }
+  });
 </script>
 
 <!-- {% if page.layout == "gallery" or page.layout == "project" %}

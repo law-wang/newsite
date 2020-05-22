@@ -39,35 +39,7 @@
 
     </section>
 
-    <div class="loader"></div>
-    <script>
-        $(window).on("load", function() {
-            $(".loader").fadeOut("100");
-        });
-      //       $(document).ready(function() {
-      //     $(window).on("load", function() {
-      //         function Preloader() {
-      //             $(".loader").fadeOut("100");
-      //         }
-      //         if (!sessionStorage.getItem('doNotShow')) {
-      //             $(".loader").show();
-      //             sessionStorage.setItem('doNotShow', true);
-      //             Preloader();
-      //         } else {
-      //            $(".loader").hide();
-      //         }
-      //     });
-      // });
-        // jQuery(window).on("load", function() {
-        //     if (sessionStorage.getItem('dontLoad') == null) {
-        //     jQuery(".loader").fadeOut("100");
-        //     sessionStorage.setItem('dontLoad', 'true');
-        //     }
-        //     else {
-        //     jQuery(".loader").hide();
-        //     }
-        // });
-    </script>
-
+    {% include loader.html %}
+    
   </body>
 </html>
