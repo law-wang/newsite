@@ -12,6 +12,21 @@
     <link rel="stylesheet" href="../assets/styles/main.css">
     <script type="text/javascript" src="../assets/scripts/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $(window).on("load", function() {
+              function Preloader() {
+                  $(".loader").fadeOut("100");
+              }
+              if (!sessionStorage.getItem('doNotShow')) {
+                  sessionStorage.setItem('doNotShow', true);
+                  Preloader();
+              } else {
+                 $ (".loader").hide();
+              }
+          });
+      });
+      </script>
     {% include tracking.html %}
 
   </head>
@@ -41,9 +56,9 @@
 
     <div class="loader"></div>
     <script>
-        $(window).on("load", function() {
-            $(".loader").fadeOut("100");
-        });
+        // $(window).on("load", function() {
+        //     $(".loader").fadeOut("100");
+        // });
         // jQuery(window).on("load", function() {
         //     if (sessionStorage.getItem('dontLoad') == null) {
         //     jQuery(".loader").fadeOut("100");
