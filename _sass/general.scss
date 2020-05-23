@@ -79,6 +79,9 @@ body {
 }
 .noscroll {
   overflow-y: hidden;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
 }
 .yesscroll {
   overflow-y: scroll;
