@@ -52,6 +52,9 @@
         @media only screen and (max-width: 650px) {
             text-align: center;
             font-size: 40px;
+            &:first-child {
+                border-top: 10px solid black;
+            }
         }
     }
     .featured-category-name {
