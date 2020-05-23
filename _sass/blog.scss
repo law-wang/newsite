@@ -46,6 +46,7 @@
         font-family: $projectHeaderFont;
             font-size: 50px;
             text-transform: uppercase;
+            font-weight: 900;
         padding: 8px;
         line-height: 1.04em;
         @media only screen and (max-width: 650px) {
@@ -57,6 +58,7 @@
         font-family: $projectHeaderFont;
             font-size: 80px;
             text-transform: uppercase;
+            font-weight: 900;
         padding: 8px;
         line-height: 1.04em;
         @media only screen and (max-width: 900px) {
@@ -87,7 +89,8 @@
     .menu-post-name {
         font-family: $subtitlefont;
             font-size: 28px;
-            font-weight: normal;
+            font-weight: 400;
+            font-style: normal;
     }
     ul {
         list-style-type: none;
