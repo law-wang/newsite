@@ -6,12 +6,12 @@ $linkhover: #cc1100;
 $bodyFont: "aktiv-grotesk", sans-serif;
 $navigationfont: "GT America Extended Bold", sans-serif;
 $headerfont: "Basis Grotesque Pro Black", sans-serif;
-$marqueefont: "GT America Expanded Light", sans-serif;
-$bodytextfont: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; 
-$subtitlefont: "AT Surt Regular", aktiv-grotesk, sans-serif; 
-$projectTitleFont: "Millionaire Script", vatican, poetica-std, serif;
-$projectHeaderFont: "GT America Expanded Black", sans-serif;
-$monofont: zeitung-mono, roboto, sans-serif;
+$marqueefont: "GT America Expanded Light", "aktiv-grotesk-extended", Arial, sans-serif;
+$bodytextfont: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; 
+$subtitlefont: neue-haas-grotesk-text, "AT Surt Regular", "aktiv-grotesk", sans-serif; 
+$projectTitleFont: "Millionaire Script", serif;
+$projectHeaderFont: "aktiv-grotesk-extended", sans-serif;
+$monofont: "zeitung-mono", sans-serif;
 
 ::-moz-selection { color: $linkhover}
 ::selection { color: $linkhover; }
@@ -79,6 +79,9 @@ body {
 }
 .noscroll {
   overflow-y: hidden;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
 }
 .yesscroll {
   overflow-y: scroll;
