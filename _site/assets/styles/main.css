@@ -205,13 +205,13 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .overall-content { border-top: 5px solid black; } }
 
-.noscroll { overflow-y: hidden; }
+.noscroll { overflow-y: hidden; display: inline-block; vertical-align: top; width: 100%; }
 
 .yesscroll { overflow-y: scroll; }
 
 footer { left: 0; bottom: 0; width: 100%; text-align: center; }
 
-footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 15px; margin: 0; padding: 2px 0; }
+footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; font-size: 15px; margin: 0; padding: 2px 0; }
 
 /* Preloader ONLY */
 .loader { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #fff; z-index: 999; }
@@ -281,12 +281,16 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 @media only screen and (max-width: 550px) { .header-title { font-size: 50px; } }
 
+.header-img-container { height: 100%; float: right; }
+
 .header-title-img { height: 100%; width: 100%; }
 
 @media only screen and (max-width: 650px) { .header-title-img { height: 70px; margin-left: auto; margin-right: auto; } }
 
+@media only screen and (min-width: 2000px) { .header-title-img { width: 1500px; margin-left: auto; margin-right: 0; } }
+
 /* Banner ONLY */
-.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; }
+.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", "aktiv-grotesk-extended", Arial, sans-serif; font-weight: 300; }
 
 .marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 25s linear infinite; }
 
@@ -297,7 +301,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .scroll-banner { margin: 0; position: relative; overflow: auto; cursor: col-resize; user-select: none; }
 
-.scroll-banner .banner-inner { white-space: nowrap; display: inline-block; padding: 0 10px; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
+.scroll-banner .banner-inner { white-space: nowrap; display: inline-block; padding: 0 10px; font-family: "GT America Expanded Light", "aktiv-grotesk-extended", Arial, sans-serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
 
 @media only screen and (max-width: 650px) { .scroll-banner .banner-inner { font-size: 20px; padding: 3px 10px 0 10px; } }
 
@@ -332,7 +336,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .about-block { width: 80%; max-width: 1500px; margin: 20px 15px 20px auto; text-align: right; }
 
-.about-block p { margin-top: 0; margin-bottom: 0; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 60px; line-height: 1.2em; }
+.about-block p { margin-top: 0; margin-bottom: 0; font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; font-weight: normal; font-size: 60px; line-height: 1.2em; }
 
 .about-block p a { font-family: "GT America Extended Bold", sans-serif; font-weight: 500px; text-transform: uppercase; }
 
@@ -342,7 +346,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 @media only screen and (max-width: 650px) { .about-block { width: 90%; margin: 20px auto; } }
 
-.about-links { width: 100%; display: flex; justify-content: space-between; white-space: nowrap; font-family: "GT America Expanded Light", sans-serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
+.about-links { width: 100%; display: flex; justify-content: space-between; white-space: nowrap; font-family: "GT America Expanded Light", "aktiv-grotesk-extended", Arial, sans-serif; font-weight: 300; font-size: 40px; text-transform: uppercase; }
 
 .about-links div { display: inline-block; margin-bottom: 5px; }
 
@@ -364,7 +368,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 @media only screen and (max-width: 400px) { .about-links { font-size: 20px; } }
 
-.home { overflow-y: hidden; font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 100px; text-transform: uppercase; max-width: 1500px; float: right; padding: 10px; }
+.home { overflow-y: hidden; font-family: neue-haas-grotesk-text, "AT Surt Regular", "aktiv-grotesk", sans-serif; font-weight: normal; font-size: 100px; text-transform: uppercase; max-width: 1500px; float: right; padding: 10px; }
 
 .home p { text-align: right; margin: 0; padding: 0; line-height: 1.2em; }
 
@@ -394,11 +398,11 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 @media only screen and (max-width: 650px) { .item-blog-description { display: none; } }
 
 /* Menu ONLY */
-.blog-menu .menu-category-name, .blogfeatured .menu-category-name { font-family: "GT America Expanded Black", sans-serif; font-size: 50px; text-transform: uppercase; padding: 8px; line-height: 1.04em; }
+.blog-menu .menu-category-name, .blogfeatured .menu-category-name { font-family: "aktiv-grotesk-extended", sans-serif; font-size: 50px; text-transform: uppercase; font-weight: 900; padding: 8px; line-height: 1.04em; }
 
 @media only screen and (max-width: 650px) { .blog-menu .menu-category-name, .blogfeatured .menu-category-name { text-align: center; font-size: 40px; } }
 
-.blog-menu .featured-category-name, .blogfeatured .featured-category-name { font-family: "GT America Expanded Black", sans-serif; font-size: 80px; text-transform: uppercase; padding: 8px; line-height: 1.04em; }
+.blog-menu .featured-category-name, .blogfeatured .featured-category-name { font-family: "aktiv-grotesk-extended", sans-serif; font-size: 80px; text-transform: uppercase; font-weight: 900; padding: 8px; line-height: 1.04em; }
 
 @media only screen and (max-width: 900px) { .blog-menu .featured-category-name, .blogfeatured .featured-category-name { font-size: 60px; } }
 
@@ -408,13 +412,13 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .blog-menu h4, .blogfeatured h4 { margin: 0; padding: 0; }
 
-.blog-menu .featured-post-name, .blogfeatured .featured-post-name { font-family: "Millionaire Script", vatican, poetica-std, serif; text-transform: uppercase; font-size: 40px; }
+.blog-menu .featured-post-name, .blogfeatured .featured-post-name { font-family: "Millionaire Script", serif; text-transform: uppercase; font-size: 40px; }
 
 @media only screen and (max-width: 650px) { .blog-menu .featured-post-name, .blogfeatured .featured-post-name { font-size: 35px; } }
 
 @media only screen and (max-width: 550px) { .blog-menu .featured-post-name, .blogfeatured .featured-post-name { font-size: 30px; } }
 
-.blog-menu .menu-post-name, .blogfeatured .menu-post-name { font-family: "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 28px; font-weight: normal; }
+.blog-menu .menu-post-name, .blogfeatured .menu-post-name { font-family: neue-haas-grotesk-text, "AT Surt Regular", "aktiv-grotesk", sans-serif; font-size: 28px; font-weight: 400; font-style: normal; }
 
 .blog-menu ul, .blogfeatured ul { list-style-type: none; margin: 0; padding: 5px 0; }
 
@@ -422,7 +426,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .blog-menu .mobile-featured, .blogfeatured .mobile-featured { display: none; }
 
-@media only screen and (max-width: 650px) { .blog-menu .mobile-featured, .blogfeatured .mobile-featured { display: block; } }
+@media only screen and (max-width: 650px) { .blog-menu .mobile-featured, .blogfeatured .mobile-featured { display: block; border-bottom: 5px solid black; } }
 
 /* Post Styling */
 .post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
@@ -437,7 +441,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .post-container { order: 2; width: 100%; flex-basis: auto; overflow-y: scroll; overflow-x: hidden; }
 
-.post-container .post-title { width: 100%; font-family: "Millionaire Script", vatican, poetica-std, serif; text-transform: uppercase; font-size: 40px; text-align: right; padding: 10px 15px 0 10px; }
+.post-container .post-title { width: 100%; font-family: "Millionaire Script", serif; text-transform: uppercase; font-size: 40px; text-align: right; padding: 10px 15px 0 10px; }
 
 @media only screen and (max-width: 650px) { .post-container .post-title { font-size: 33px; } }
 
@@ -446,7 +450,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 @media only screen and (max-width: 650px) { .post-container .post-info { font-size: 15px; } }
 
 /* Blog Content Styling */
-.post-content { width: 100%; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
+.post-content { width: 100%; font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
 
 .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 { font-family: "GT America Extended Bold", sans-serif; }
 
@@ -460,12 +464,12 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .post-content .footnotes { font-size: 18px; color: #474747; }
 
-.post-content code { font-family: zeitung-mono, roboto, sans-serif; font-size: 18px; }
+.post-content code { font-family: "zeitung-mono", sans-serif; font-size: 18px; }
 
 /* Navigation Styling */
 .post-navigation { order: 1; width: 100%; flex-basis: 20px; background-color: #f2f2f2; z-index: 100; }
 
-.post-navigation a { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 15px; margin: 0; }
+.post-navigation a { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; font-size: 15px; margin: 0; }
 
 .post-navigation a:hover { color: #000000; }
 
@@ -484,7 +488,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
   .project .project-grouping { width: 100%; }
   .project .fun-things-grouping { width: 100%; } }
 
-.project .project-header { font-family: "GT America Expanded Black", sans-serif; font-size: 80px; text-transform: uppercase; padding: 8px; line-height: 1.04em; }
+.project .project-header { font-family: "aktiv-grotesk-extended", sans-serif; font-size: 80px; text-transform: uppercase; font-weight: 900; padding: 8px; line-height: 1.04em; }
 
 @media only screen and (max-width: 900px) { .project .project-header { font-size: 60px; } }
 
@@ -500,7 +504,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 .fun-things-grouping { grid-area: "fun-things"; }
 
-.readmore-links { font-family: "GT America Expanded Black", sans-serif; font-size: 30px; font-weight: 900; margin: 10px auto 5px auto; flex-wrap: wrap; width: 100%; }
+.readmore-links { font-family: "aktiv-grotesk-extended", sans-serif; font-size: 30px; font-weight: 900; margin: 10px auto 5px auto; flex-wrap: wrap; width: 100%; }
 
 .readmore-links a { width: 50%; }
 
@@ -508,7 +512,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 
 @media only screen and (max-width: 650px) { .readmore-links { font-size: 20px; } }
 
-.archive { padding: 8px 5px 0 20px; font-family: "Millionaire Script", vatican, poetica-std, serif; text-transform: uppercase; font-size: 40px; }
+.archive { padding: 8px 5px 0 20px; font-family: "Millionaire Script", serif; text-transform: uppercase; font-size: 40px; }
 
 @media only screen and (max-width: 650px) { .archive { font-size: 35px; } }
 
@@ -517,7 +521,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk
 /* Accordion Set Up */
 input { display: none; }
 
-input + label { display: block; position: relative; padding: 10px 30px 0 20px; font-family: "Millionaire Script", vatican, poetica-std, serif; font-size: 40px; text-transform: uppercase; }
+input + label { display: block; position: relative; padding: 10px 30px 0 20px; font-family: "Millionaire Script", serif; font-size: 40px; text-transform: uppercase; }
 
 @media only screen and (max-width: 650px) { input + label { font-size: 35px; } }
 
@@ -533,7 +537,7 @@ input ~ div { height: 1px; padding: 0 10px; overflow: hidden; }
 
 input ~ div > * { opacity: 0; transition: 1s; }
 
-input ~ div > p { padding: 0; margin: 0; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 30px; line-height: 1.25em; }
+input ~ div > p { padding: 0; margin: 0; font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; font-size: 30px; line-height: 1.25em; }
 
 @media only screen and (max-width: 650px) { input ~ div > p { font-size: 20px; } }
 
@@ -558,11 +562,11 @@ label:hover { cursor: help; color: #cc1100; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid { grid-gap: 5px; } }
 
-.projectpage-grid .projectpost-title { font-family: "GT America Expanded Black", sans-serif; font-size: 40px; text-transform: uppercase; padding: 5px 10px; overflow: hidden; }
+.projectpage-grid .projectpost-title { font-family: "aktiv-grotesk-extended", sans-serif; font-size: 40px; text-transform: uppercase; font-weight: 900; padding: 5px 10px; overflow: hidden; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid .projectpost-title { font-size: 30px; } }
 
-.projectpage-grid .projectpost-content { padding: 0 10px; font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; font-size: 22px; overflow-y: scroll; }
+.projectpage-grid .projectpost-content { padding: 0 10px; font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; font-size: 22px; overflow-y: scroll; }
 
 .projectpage-grid .projectpost-nav { width: 100%; overflow-x: hidden; overflow-y: auto; }
 
@@ -570,7 +574,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid .projectpost-nav .projpost-nav-title { font-size: 30px; } }
 
-.projectpage-grid .projectpost-nav .projpost-nav-item { font-family: "Millionaire Script", vatican, poetica-std, serif; font-size: 20px; text-transform: uppercase; padding: 5px 10px 0 10px; }
+.projectpage-grid .projectpost-nav .projpost-nav-item { font-family: "Millionaire Script", serif; font-size: 20px; text-transform: uppercase; padding: 5px 10px 0 10px; }
 
 .gallery-navigation { width: 100%; display: flex; justify-content: space-between; white-space: nowrap; font-family: "GT America Extended Bold", sans-serif; font-weight: 300; font-size: 50px; text-transform: uppercase; }
 
@@ -608,7 +612,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 .content-details .content-title { font-family: "GT America Extended Bold", sans-serif; font-size: 30px; padding-bottom: 15px; text-transform: uppercase; margin: 0; }
 
-.content-details .content-text { font-family: "Capsule Sans Regular", "AT Surt Regular", aktiv-grotesk, sans-serif; text-align: justify; font-size: 15px; margin: 0 auto; max-width: 400px; }
+.content-details .content-text { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; text-align: justify; font-size: 15px; margin: 0 auto; max-width: 400px; }
 
 @media only screen and (max-width: 650px) { .content-details { display: none; } }
 
