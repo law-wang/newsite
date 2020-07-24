@@ -186,7 +186,7 @@
 body { background: #f2f2f2; color: #000000; font-family: "aktiv-grotesk", sans-serif; }
 
 /* Global Styling */
-a { text-decoration: none; color: #000000; transition: all 0.3s linear; }
+a { text-decoration: none; color: #000000; transition: color 0.3s linear; }
 
 a:hover { color: #cc1100; cursor: help; }
 
@@ -201,9 +201,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; }
 
 @media only screen and (max-width: 650px) { .overall-header { flex-basis: 215px; } }
 
-.overall-content { height: 100%; flex-basis: auto; margin-top: 5px; border-top: 10px solid black; }
-
-@media only screen and (max-width: 650px) { .overall-content { border-top: 5px solid black; } }
+.overall-content { height: 100%; flex-basis: auto; margin-top: 5px; border-top: 5px solid black; }
 
 .noscroll { overflow-y: hidden; display: inline-block; vertical-align: top; width: 100%; }
 
@@ -219,7 +217,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 /* Functional Classes ONLY */
 .noselect { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-.bgcolor-changer { transition: all 0.5s linear; }
+.bgcolor-changer { transition: background-color 0.5s linear; }
 
 .bgcolor-changer:hover { background-color: #cc1100; cursor: alias; }
 
@@ -245,13 +243,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 .footer-changer:after { animation: footerText 20s linear infinite alternate; content: "love"; font-size: 15px; }
 
 /* Grid ONLY */
-.header-container-grid { display: grid; grid-template-columns: 20% auto; grid-template-rows: 50px 250px; grid-gap: 10px; background-color: #000000; border-bottom: 10px solid #000000; grid-template-areas: "banner banner" "navigation title"; }
-
-@media only screen and (max-width: 1200px) { .header-container-grid { grid-template-columns: 30% auto; } }
-
-@media only screen and (max-width: 900px) { .header-container-grid { grid-template-columns: 35% auto; } }
-
-@media only screen and (max-width: 800px) { .header-container-grid { grid-template-columns: 40% auto; } }
+.header-container-grid { display: grid; grid-template-columns: 200px auto; grid-template-rows: 25px 175px; grid-gap: 5px; background-color: #000000; border-bottom: 5px solid #000000; grid-template-areas: "banner banner" "navigation title"; }
 
 @media only screen and (max-width: 650px) { .header-container-grid { grid: 30px 70px 50px 50px / 1fr 1fr; border: none; grid-gap: 5px; grid-template-areas: "banner banner" "title title" "navigation navigation" "navigation navigation"; } }
 
@@ -266,7 +258,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 .item-title { grid-area: title; }
 
 /* Navigation ONLY */
-.nav-bar { margin: 10px; font-family: "GT America Extended Bold", sans-serif; font-size: 40px; font-weight: 700; letter-spacing: 0.5px; }
+.nav-bar { margin: 10px; font-family: "GT America Extended Bold", sans-serif; font-size: 25px; font-weight: 400; letter-spacing: 0.5px; }
 
 @media only screen and (max-width: 650px) { .nav-bar { display: flex; flex-wrap: wrap; height: 100px; margin: 0; font-size: 30px; } }
 
@@ -292,7 +284,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 /* Banner ONLY */
 .marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", "aktiv-grotesk-extended", Arial, sans-serif; font-weight: 300; }
 
-.marquee span { display: inline-block; font-size: 40px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 25s linear infinite; }
+.marquee span { display: inline-block; font-size: 20px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 25s linear infinite; }
 
 @media only screen and (max-width: 650px) { .marquee span { font-size: 20px; } }
 
@@ -310,19 +302,13 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 /* Functional Classes ONLY */
 .border-bottom, .mobile-border-bottom, .mobile-border-top, .border-top, .border-right, .mobile-border-right { box-sizing: border-box; }
 
-.border-bottom { border-bottom: 10px solid black; }
-
-@media only screen and (max-width: 650px) { .border-bottom { border-bottom: 5px solid black; } }
+.border-bottom { border-bottom: 5px solid black; }
 
 .border-bottom:last-child { border-bottom: none; }
 
-.border-top { border-top: 10px solid black; }
+.border-top { border-top: 5px solid black; }
 
-@media only screen and (max-width: 650px) { .border-top { border-top: 5px solid black; } }
-
-.border-right { border-right: 10px solid black; }
-
-@media only screen and (max-width: 650px) { .border-right { border-right: 5px solid black; } }
+.border-right { border-right: 5px solid black; }
 
 .mobile-show { display: none; }
 
@@ -381,7 +367,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 @media only screen and (max-width: 500px) { .home .image-container img { width: 50%; } }
 
 /* Home Page ONLY */
-.blog { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "description blog-menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
+.blog { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "description blog-menu"; grid-gap: 5px; overflow-x: hidden; background-color: #000000; }
 
 @media only screen and (max-width: 1000px) { .blog { grid: auto / 50% 50%; } }
 
@@ -478,7 +464,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 .post-navigation .next { display: block; width: auto; float: right; text-align: right; padding-right: 5px; }
 
 /* Grid Set Up */
-.project { width: 100%; height: 100%; display: grid; grid: auto / 73% 27%; grid-template-areas: "projects fun-things"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
+.project { width: 100%; height: 100%; display: grid; grid: auto / 73% 27%; grid-template-areas: "projects fun-things"; grid-gap: 5px; overflow-x: hidden; background-color: #000000; }
 
 @media only screen and (max-width: 1200px) { .project { grid: auto / 68% 32%; } }
 

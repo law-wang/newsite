@@ -1,23 +1,14 @@
 /* Grid ONLY */
 .header-container-grid {
   display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-rows: 50px 250px;
-  grid-gap: 10px;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 25px 175px;
+  grid-gap: 5px;
   background-color: $containerbg;
-  border-bottom: 10px solid $containerbg;
+  border-bottom: 5px solid $containerbg;
   grid-template-areas:
     "banner banner"
     "navigation title";
-  @media only screen and (max-width: 1200px) {
-    grid-template-columns: 30% auto;
-  }
-  @media only screen and (max-width: 900px) {
-    grid-template-columns: 35% auto;
-  }
-  @media only screen and (max-width: 800px) {
-    grid-template-columns: 40% auto;
-  }
   @media only screen and (max-width: 650px) {
     grid: 30px 70px 50px 50px / 1fr 1fr;
     border: none;
@@ -51,8 +42,8 @@
 .nav-bar {
   margin: 10px;
   font-family: $navigationfont;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 400;
     letter-spacing: 0.5px;
   @media only screen and (max-width: 650px) {
     display: flex;
@@ -124,7 +115,7 @@
     font-weight: 300;
   span {
     display: inline-block;
-    font-size: 40px;
+    font-size: 20px;
     text-transform: uppercase;
     padding-left: 100%;
     padding-bottom: 5px;
@@ -177,25 +168,16 @@
   box-sizing: border-box;
 }
 .border-bottom {
-  border-bottom: 10px solid black;
-  @media only screen and (max-width: 650px) {
-    border-bottom: 5px solid black;
-  }
+  border-bottom: 5px solid black;
   &:last-child {
     border-bottom: none;
   }
 }
 .border-top {
-  border-top: 10px solid black;
-  @media only screen and (max-width: 650px) {
-    border-top: 5px solid black;
-  }
+  border-top: 5px solid black;
 }
 .border-right {
-  border-right: 10px solid black;
-  @media only screen and (max-width: 650px) {
-    border-right: 5px solid black;
-  }
+  border-right: 5px solid black;
 }
 .mobile-show {
   display: none;

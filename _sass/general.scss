@@ -35,7 +35,7 @@ body {
 a {
   text-decoration: none;
   color: $bodyColor;
-  transition: all 0.3s linear;
+  transition: color 0.3s linear;
   &:hover {
     color: $linkhover;
     cursor: help;
@@ -72,10 +72,7 @@ body {
   height: 100%;
   flex-basis: auto;
   margin-top: 5px;
-  border-top: 10px solid black;
-  @media only screen and (max-width: 650px) {
-    border-top: 5px solid black;
-  }
+  border-top: 5px solid black;
 }
 .noscroll {
   overflow-y: hidden;
@@ -120,7 +117,7 @@ footer {
           user-select: none;
 }
 .bgcolor-changer {
-  transition: all 0.5s linear;
+  transition: background-color 0.5s linear;
   &:hover {
     background-color: $linkhover;
     cursor: alias;
