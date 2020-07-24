@@ -63,9 +63,9 @@ body {
   height: 100%;
 }
 .overall-header {
-  flex-basis: 320px;
+  flex-basis: 200px;
   @media only screen and (max-width: 650px) {
-    flex-basis: 215px;
+    flex-basis: 195px;
   }
 }
 .overall-content {
