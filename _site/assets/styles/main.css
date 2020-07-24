@@ -282,14 +282,11 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 @media only screen and (min-width: 2000px) { .header-title-img { width: 1500px; margin-left: auto; margin-right: 0; } }
 
 /* Banner ONLY */
-.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "GT America Expanded Light", "aktiv-grotesk-extended", Arial, sans-serif; font-weight: 300; }
+.marquee { white-space: nowrap; overflow: hidden; box-sizing: border-box; width: 100%; margin: 0 auto; font-family: "aktiv-grotesk-extended", sans-serif; font-weight: 300; }
 
-.marquee span { display: inline-block; font-size: 20px; text-transform: uppercase; padding-left: 100%; padding-bottom: 5px; animation: marquee 25s linear infinite; }
+.marquee span { display: inline-block; font-size: 20px; padding-left: 10px; padding-bottom: 5px; }
 
 @media only screen and (max-width: 650px) { .marquee span { font-size: 20px; } }
-
-@keyframes marquee { 0% { transform: translate(0, 0); }
-  100% { transform: translate(-100%, 0); } }
 
 .scroll-banner { margin: 0; position: relative; overflow: auto; cursor: col-resize; user-select: none; }
 
@@ -415,7 +412,7 @@ footer p { font-family: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotes
 @media only screen and (max-width: 650px) { .blog-menu .mobile-featured, .blogfeatured .mobile-featured { display: block; border-bottom: 5px solid black; } }
 
 /* Post Styling */
-.post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 10px; overflow-x: hidden; background-color: #000000; }
+.post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 5px; overflow-x: hidden; background-color: #000000; }
 
 @media only screen and (max-width: 1000px) { .post { grid: auto / 50% 50%; } }
 
@@ -540,7 +537,7 @@ label:hover { cursor: help; color: #cc1100; }
 /* Individual Project Pages ONLY */
 .projectpage { height: 100%; width: 100%; overflow-x: hidden; }
 
-.projectpage-grid { height: 100%; grid-gap: 10px; background-color: #000000; }
+.projectpage-grid { height: 100%; grid-gap: 5px; background-color: #000000; }
 
 .projectpage-grid > div { background-color: #f2f2f2; height: 100%; overflow-x: hidden; overflow-y: scroll; }
 
