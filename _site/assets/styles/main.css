@@ -190,7 +190,7 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; overflow-x: hidden; }
 .yesscroll { overflow-y: scroll; }
 
 /* Preloader ONLY */
-.loader { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #fff; z-index: 999; }
+.loader { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #f2f2f2; z-index: 999; }
 
 /* Functional Classes ONLY */
 .noselect { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
@@ -290,7 +290,7 @@ footer > div span:last-child { text-align: right; }
 
 @media only screen and (max-width: 1000px) { .blog { grid: auto / 65% 35%; } }
 
-@media only screen and (max-width: 650px) { .blog { grid-template-columns: 100%; } }
+@media only screen and (max-width: 650px) { .blog { display: inherit; } }
 
 .item-blog-menu, .item-blog-description, .item-post-content { background-color: #f2f2f2; height: 100%; overflow-x: hidden; overflow-y: auto; }
 
@@ -299,8 +299,6 @@ footer > div span:last-child { text-align: right; }
 .item-blog-menu { grid-area: "blog-menu"; }
 
 .item-blog-description { grid-area: "description"; }
-
-@media only screen and (max-width: 650px) { .item-blog-description { display: none; } }
 
 /* Menu ONLY */
 .blog-menu .menu-category-name, .blogfeatured .menu-category-name { font-size: 50px; font-weight: 500; padding: 8px 5px; line-height: 1.04em; }
@@ -328,10 +326,6 @@ footer > div span:last-child { text-align: right; }
 .blog-menu ul, .blogfeatured ul { list-style-type: none; margin: 0; padding: 5px 0; }
 
 .blog-menu ul h5, .blogfeatured ul h5 { margin: 0; padding: 5px; }
-
-.blog-menu .mobile-featured, .blogfeatured .mobile-featured { display: none; }
-
-@media only screen and (max-width: 650px) { .blog-menu .mobile-featured, .blogfeatured .mobile-featured { display: block; border-bottom: 2px solid black; } }
 
 /* Post Styling */
 .post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 2px; overflow-x: hidden; background-color: #000000; }
@@ -410,8 +404,6 @@ footer > div span:last-child { text-align: right; }
 .fun-things-grouping { grid-area: "fun-things"; }
 
 .readmore-links { font-size: 30px; font-weight: 500; margin: 10px auto 5px auto; display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; }
-
-.readmore-links a { width: 50%; }
 
 .readmore-links a:last-child { text-align: right; float: right; }
 

@@ -1,6 +1,7 @@
 ---
 layout: projectpost
 title: The Yale Politic&#58; Presidential Hopefuls
+project: true
 published: true
 category: Project
 tag: 

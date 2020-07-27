@@ -1,4 +1,3 @@
-
 /* Home Page ONLY */
 .blog {
     width: 100%;
@@ -14,7 +13,7 @@
         grid: auto / 65% 35%;
     }
     @media only screen and (max-width: 650px) {
-        grid-template-columns: 100%;
+        display: inherit;
     }
 }
 .item-blog-menu,
@@ -33,9 +32,6 @@
 }
 .item-blog-description {
     grid-area: "description";
-    @media only screen and (max-width: 650px) {
-        display: none;
-    }
 }
 
 /* Menu ONLY */
@@ -92,13 +88,6 @@
         h5 {
             margin: 0;
             padding: 5px;
-        }
-    }
-    .mobile-featured {
-        display: none;
-        @media only screen and (max-width: 650px) {
-            display: block;
-            border-bottom: 2px solid black;
         }
     }
 }

@@ -1,14 +1,14 @@
 <main class="blogfeatured">
-
     <h4 class="featured-category-name bgcolor-changer noselect border-bottom" id="{{ category[0] | downcase }}"><span>Featured</span></h4>
-    
+
     {% for post in site.tags.Featured %}
+    {% if post.project != true %}
 
     <div class="accordionPiece">
         <input type="checkbox" id="{{ forloop.index }}" name="accordion" />
         <label for="{{ forloop.index }}">{{ post.title }}</label>
         <div>
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+            <p>{{ post.description }}</p>
             <div class="readmore-links">
                 <div>{{ post.date | date: '%b %d, %Y' }}</div>
                 <a href="{{ post.url }}" >CONTINUE READING</a>
@@ -16,6 +16,6 @@
         </div>
     </div>
 
+    {% endif %}
     {% endfor %}
-
 </main>

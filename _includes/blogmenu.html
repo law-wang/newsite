@@ -1,19 +1,6 @@
 <main class="blog-menu">
 
-    <div class="mobile-featured">
-        <h4 class="menu-category-name bgcolor-changer noselect border-bottom" id="{{ category[0] | downcase }}"><span>Featured</span></h4>
-        <div class="post-listing border-bottom">
-            <ul>
-                {% for post in site.tags.Featured %}
-                <li>
-                    <h5 class="menu-post-name"><a href="{{ post.url }}">{{ post.title }}</a></h5>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-
-    <h4 class="menu-category-name bgcolor-changer noselect border-bottom" id="{{ category[0] | downcase }}"><span>Personal</span></h4>
+    <h4 class="menu-category-name bgcolor-changer noselect mobile-border-top border-bottom" id="{{ category[0] | downcase }}"><span>Personal</span></h4>
     <div class="post-listing border-bottom">
         <ul>
             {% for post in site.categories['Personal'] %}
