@@ -37,6 +37,13 @@ a {
     cursor: help;
   }
 }
+button {
+  transition: color 0.3s linear;
+  &:hover {
+    color: $linkhover;
+    cursor: help;
+  }
+}
 img {
   -webkit-backface-visibility: hidden; 
   -ms-transform: translateZ(0); /* IE 9 */
