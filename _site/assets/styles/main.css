@@ -327,6 +327,8 @@ footer > div span:last-child { text-align: right; }
 
 .blog-menu ul h5, .blogfeatured ul h5 { margin: 0; padding: 5px; }
 
+@media only screen and (max-width: 650px) { .blog-menu ul h5, .blogfeatured ul h5 { padding: 5px 0; } }
+
 /* Post Styling */
 .post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 2px; overflow-x: hidden; background-color: #000000; }
 
@@ -349,13 +351,15 @@ footer > div span:last-child { text-align: right; }
 @media only screen and (max-width: 650px) { .post-container .post-info { font-size: 15px; } }
 
 /* Blog Content Styling */
-.post-content { width: 100%; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 10px; }
+.post-content { width: 100%; font-weight: normal; font-size: 20px; line-height: 1.3em; letter-spacing: 0.5px; padding: 0 15px 10px 0; }
+
+@media only screen and (max-width: 650px) { .post-content { padding: 0 0 10px 0; } }
 
 .post-content h1, .post-content h2 { text-transform: uppercase; line-height: 1.2em; margin-bottom: 0; }
 
 .post-content img { max-width: 100%; max-height: 350px; object-fit: cover; border: 0; margin: 30px auto; display: block; width: 80%; }
 
-.post-content blockquote { font-style: italic; }
+.post-content blockquote { font-style: italic; border-left: 2px solid black; padding-left: 10px; }
 
 .post-content ul, .post-content ol { font-family: "Inter", "aktiv-grotesk", sans-serif; }
 
@@ -373,6 +377,8 @@ footer > div span:last-child { text-align: right; }
 .post-navigation .prev { display: block; width: auto; float: left; padding-left: 0; }
 
 .post-navigation .next { display: block; width: auto; float: right; text-align: right; padding-right: 5px; }
+
+@media only screen and (max-width: 650px) { .post-navigation .next { padding-right: 0px; } }
 
 /* Grid Set Up */
 .project { width: 100%; height: 100%; display: grid; grid: auto / 73% 27%; grid-template-areas: "projects fun-things"; grid-gap: 2px; overflow-x: hidden; background-color: #000000; }
@@ -449,27 +455,31 @@ label:hover { cursor: help; color: #cc1100; }
 /* Individual Project Pages ONLY */
 .projectpage { height: 100%; width: 100%; overflow-x: hidden; }
 
-.projectpage-grid { height: 100%; grid-gap: 5px; background-color: #000000; }
+.projectpage-grid { height: 100%; grid-gap: 2px; background-color: #000000; }
 
 .projectpage-grid > div { background-color: #f2f2f2; height: 100%; overflow-x: hidden; overflow-y: scroll; }
 
 @media only screen and (max-width: 62rem) { .projectpage-grid { height: auto; } }
 
-@media only screen and (max-width: 650px) { .projectpage-grid { grid-gap: 5px; } }
+@media only screen and (max-width: 650px) { .projectpage-grid { grid-gap: 2px; } }
 
-.projectpage-grid .projectpost-title { font-size: 40px; text-transform: uppercase; font-weight: 900; padding: 5px 10px; overflow: hidden; }
+.projectpage-grid .projectpost-title { font-size: 50px; text-transform: uppercase; font-weight: 500; padding: 5px 0; overflow: hidden; }
 
 @media only screen and (max-width: 650px) { .projectpage-grid .projectpost-title { font-size: 30px; } }
 
-.projectpage-grid .projectpost-content { padding: 0 10px; font-size: 22px; overflow-y: scroll; }
+.projectpage-grid .projectpost-content { padding: 0 10px 0 0; font-size: 20px; overflow-y: scroll; }
+
+@media only screen and (max-width: 650px) { .projectpage-grid .projectpost-content { padding: 0; } }
 
 .projectpage-grid .projectpost-nav { width: 100%; overflow-x: hidden; overflow-y: auto; }
 
-.projectpage-grid .projectpost-nav .projpost-nav-title { width: 100%; font-size: 40px; padding: 0 10px; }
+.projectpage-grid .projectpost-nav .projpost-nav-title { width: 100%; font-size: 40px; padding: 0 5px; }
 
-@media only screen and (max-width: 650px) { .projectpage-grid .projectpost-nav .projpost-nav-title { font-size: 30px; } }
+@media only screen and (max-width: 650px) { .projectpage-grid .projectpost-nav .projpost-nav-title { font-size: 30px; padding: 0; } }
 
-.projectpage-grid .projectpost-nav .projpost-nav-item { font-size: 20px; text-transform: uppercase; padding: 5px 10px 0 10px; }
+.projectpage-grid .projectpost-nav .projpost-nav-item { font-size: 20px; text-transform: uppercase; padding: 5px 0 0 5px; }
+
+@media only screen and (max-width: 650px) { .projectpage-grid .projectpost-nav .projpost-nav-item { padding: 0; } }
 
 .gallery-navigation { width: 100%; display: flex; justify-content: space-between; white-space: nowrap; font-weight: 300; font-size: 50px; text-transform: uppercase; }
 

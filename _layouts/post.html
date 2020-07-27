@@ -20,8 +20,7 @@ layout: default
         </div>
 
         <div class="post-navigation bgcolor-changer noselect border-top">
-            {% assign time = page.date | date: "%Y" | times: 1 %}
-            {% if page.previous.url and time > 2017 %}
+            {% if page.previous.url and page.previous.project != true %}
                 <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
             {% endif %}
 

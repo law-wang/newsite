@@ -182,7 +182,7 @@ label:hover {
 }
 .projectpage-grid {
     height: 100%;
-    grid-gap: 5px;
+    grid-gap: 2px;
     background-color: $containerbg;
     & > div {
         background-color: $background;
@@ -194,22 +194,25 @@ label:hover {
         height: auto;
     }
     @media only screen and (max-width: 650px) {
-        grid-gap: 5px;
+        grid-gap: 2px;
     }
     .projectpost-title {
-            font-size: 40px;
-            text-transform: uppercase;
-            font-weight: 900;
-        padding: 5px 10px;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 5px 0;
         overflow: hidden;
         @media only screen and (max-width: 650px) {
             font-size: 30px;
         }
     }
     .projectpost-content {
-        padding: 0 10px;
-        font-size: 22px;
+        padding: 0 10px 0 0;
+        font-size: 20px;
         overflow-y: scroll;
+        @media only screen and (max-width: 650px) {
+            padding: 0;
+        }
     }
     .projectpost-nav {
         width: 100%;
@@ -217,16 +220,20 @@ label:hover {
         overflow-y: auto;
         .projpost-nav-title {
             width: 100%;
-                font-size: 40px;
-            padding: 0 10px;
+            font-size: 40px;
+            padding: 0 5px;
             @media only screen and (max-width: 650px) {
                 font-size: 30px;
+                padding: 0;
             }
         }
         .projpost-nav-item {
             font-size: 20px;
             text-transform: uppercase;
-            padding: 5px 10px 0 10px;
+            padding: 5px 0 0 5px;
+            @media only screen and (max-width: 650px) {
+                padding: 0;
+            }
         }
     }
 }
