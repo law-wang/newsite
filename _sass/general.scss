@@ -20,6 +20,8 @@ $monofont: "zeitung-mono", sans-serif;
 }
 
 body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   background: $background;
   color: $bodyColor;
   font-family: $bodyFont;
@@ -48,7 +50,9 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
+
 .overall {
   display: flex;
   flex-flow: column;
@@ -70,17 +74,6 @@ body {
 }
 .yesscroll {
   overflow-y: scroll;
-}
-footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  p {
-    font-size: 15px;
-    margin: 0;
-    padding: 2px 0;
-  }
 }
 
 /* Preloader ONLY */

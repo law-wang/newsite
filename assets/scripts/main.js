@@ -1,28 +1,95 @@
 function greeting() {
   var day = new Date();
-  var hr = day.getHours();
-  if (hr == 0) { document.getElementById("note").innerHTML = "12AM: The waves come after midnight."; }
-  if (hr == 1) { document.getElementById("note").innerHTML = "1AM: Let's fall asleep to revolution, then wake up next to a sad excuse"; }
-  if (hr == 2) { document.getElementById("note").innerHTML = "2AM: I got all I need, in a world of doubt. We got our champagne dreams, in an endless drought"; }
-  if (hr == 3) { document.getElementById("note").innerHTML = "3AM: Should we drink a little more of this Roman coke"; }
-  if (hr == 4) { document.getElementById("note").innerHTML = "4AM: Wasted youth, always on the road"; }
-  if (hr == 5) { document.getElementById("note").innerHTML = "5AM: Last of a dying breed"; }
-  if (hr == 6) { document.getElementById("note").innerHTML = "6AM: All the cigarette smoke, can't escape a closing window"; }
-  if (hr == 7) { document.getElementById("note").innerHTML = "7AM: Turn around and you’ll see what I see"; }
-  if (hr == 8) { document.getElementById("note").innerHTML = "8AM: to be honest, what I liked, were the things we didn’t know"; }
-  if (hr == 9) { document.getElementById("note").innerHTML = "9AM: Would you believe me now, if I say I got caught up in a wave, almost gave it away"; }
-  if (hr == 10) { document.getElementById("note").innerHTML = "10AM: But I'm still not sure if fear's a rival or close relative to truth"; }
-  if (hr == 11) { document.getElementById("note").innerHTML = "11AM: Hang your head low in the glow of the vending machine I'm not dying"; }
-  if (hr == 12) { document.getElementById("note").innerHTML = "12PM: There's no going back against this california feeling"; }
-  if (hr == 13) { document.getElementById("note").innerHTML = "1PM: I guess you win some and lose some, 'long as the outcome's income. I want it all, and then some."; }
-  if (hr == 14) { document.getElementById("note").innerHTML = "2PM: It’s a train wreck, but I won’t crash it"; }
-  if (hr == 15) { document.getElementById("note").innerHTML = "3PM: But here we are, after all the messes and confessions, to the stars"; }
-  if (hr == 16) { document.getElementById("note").innerHTML = "4PM: I’ll start somewhere new, and let you have LA"; }
-  if (hr == 17) { document.getElementById("note").innerHTML = "5PM: Let’s pick the truth we believe in, like a bad religion, tell me all your original sins"; }
-  if (hr == 18) { document.getElementById("note").innerHTML = "6PM: Have you thought it over, have you gotten what you deserved"; }
-  if (hr == 19) { document.getElementById("note").innerHTML = "7PM: You are what you love not who loves you"; }
-  if (hr == 20) { document.getElementById("note").innerHTML = "8PM: clear blue water, high tide, came and brought you in"; }
-  if (hr == 21) { document.getElementById("note").innerHTML = "9PM: 'Cause you know the good die young, but so did this, and so it must be better than I think it is"; }
-  if (hr == 22) { document.getElementById("note").innerHTML = "10PM: Try to shine. Stay wild."; }
-  if (hr == 23) { document.getElementById("note").innerHTML = "11PM: When it rains it pours, so stay thirsty like before"; }
+  var hour = day.getHours();
+  let greetingText = ""
+  switch(hour) {
+      case 0: 
+          greetingText = "The waves come after midnight." 
+          break;
+      case 1: 
+          greetingText = "Let's fall asleep to a revolution, then wake up next to a sad excuse."
+          break;
+      case 2: 
+          greetingText = "I got all I need, in a world of doubt. We got our champagne dreams, in an endless drought."
+          break;
+      case 3: 
+          greetingText = "The lies I weave are all so intricate."
+          break;
+      case 4: 
+          greetingText = "We could follow the sparks, I'll drive."
+          break;
+      case 5: 
+          greetingText = "Don't you know there's a part of me that longs to go."
+          break;
+      case 6: 
+          greetingText = "In my darkest hours I stumbled on a secret power."
+          break;
+      case 7: 
+          greetingText = "Turn around and you’ll see what I see."
+          break;
+      case 8: 
+          greetingText = "To be honest, what I liked, were the things I didn’t know."
+          break;
+      case 9: 
+          greetingText = "Would you believe me now, if I say I got caught up in a wave, almost gave it away."
+          break;
+      case 10: 
+          greetingText = "But I'm still not sure if fear's a rival or close relative to truth."
+          break;
+      case 11: 
+          greetingText = "Hang your head low in the glow of the vending machine I'm not dying."
+          break;
+      case 12: 
+          greetingText = "There's no going back against this California feeling."
+          break;
+      case 13: 
+          greetingText = "I guess you win some and lose some, 'long as the outcome's income. I want it all, and then some."
+          break;
+      case 14: 
+          greetingText = "It’s a train wreck, but I won’t crash it."
+          break;
+      case 15: 
+          greetingText = "But here we are, after all the messes and confessions, to the stars."
+          break;
+      case 16: 
+          greetingText = "I hope this summer breeze would last more than a season."
+          break;
+      case 17: 
+          greetingText = "Look at the world, so close, and I'm halfway to it."
+          break;
+      case 18: 
+          greetingText = "In the meantime we let it go, at the roadside we used to know."
+          break;
+      case 19: 
+          greetingText = "You are what you love, not who loves you."
+          break;
+      case 20: 
+          greetingText = "Why settle for less when there's more?"
+          break;
+      case 21: 
+          greetingText = "'Cause you know the good die young, but so did this, and so it must be better than I think it is."
+          break;
+      case 22: 
+          greetingText = "Try to shine. Stay wild."
+          break;
+      case 23: 
+          greetingText = "When it rains it pours, so stay thirsty like before."
+          break;
+      default: 
+          greetingText = "We could follow the sparks, I'll drive."
+  }
+}
+
+function closeAbout() {
+  const aboutBlock = document.querySelector("#aboutblock")
+  aboutBlock.classList.remove('about-show')
+}
+
+function showAbout() {
+  const aboutBlock = document.querySelector("#aboutblock")
+  if (aboutBlock.classList.contains('about-show')) {
+    aboutBlock.classList.remove('about-show')
+  } else {
+    aboutBlock.classList.add('about-show')
+  }
 }

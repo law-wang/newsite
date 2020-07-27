@@ -46,7 +46,7 @@
 
   <div>
       <a href="/">Lawrence Wang</a>
-      <button>?</button>
+      <button onclick="showAbout()">?</button>
   </div>
 
   <div class="header-navigation">
@@ -99,13 +99,37 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente obca
         </main>
       
 
-      <footer class="border-top bgcolor-changer noselect">
-        <p>
+      <footer>
+    <div>
+        <span id="clock">{time.toLocaleTimeString()}</span>
+        <span id="greeting">{greetingText}</span>
+    </div>
     &copy; 2020 code & design by me 满载星海 from LA
-</p>
-      </footer>
+</footer>
+
+      <main id="aboutblock" class="aboutblock">
+    <div class="about-nav">
+        <button onclick="closeAbout()">Close</button>
+        <div class="about-social">
+            <a href="https://www.instagram.com/lawrencio.w/">Instagram</a>
+            <a href="https://www.linkedin.com/in/lawrence-c-w/">LinkedIn</a>
+            <a href="/">Resume</a>
+        </div>
+    </div>
+    <div class="about-text">
+        <p>I'm a student at &#x2609; Yale studying the intersection between computer science and design and <i>also economics</i>. I like basic things such as watching Chinese TV, making Spotify playlists, crying to YouTube videos, collecting song lyrics, and yelping.
+        If you'd like to find out more about the interesting personality I never knew I had, you can check out my basic <Link to="/blog">opinions</Link>, my basic <a href="/art">art</a>, or go find me &#x2197; while I get lost in space.</p>
+    </div>
+    <div class="about-recents">
+        <span>Recently &#x2014;</span>
+        <span><a href="https://youtu.be/iVQhkDZS_Tk">a dream</a></span>
+        <span><a href="https://www.planneduniverse.com">a blog about floor plans</a></span>
+        <span><a href="https://youtu.be/kBF5l9rWQFs">a lesson on child-rearing</a></span>
+    </div>
+</main>
 
     </section>
+
 
     <!-- LOADER -->
 <div class="loader"></div>
