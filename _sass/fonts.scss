@@ -1,19 +1,6 @@
 // Adobe: aktiv-grotesk, aktiv-grotesk-extended, zeitung-mono
 @import url("https://use.typekit.net/pbz7uek.css");
-
-@font-face {
-    font-family: "Basis Grotesque Pro Black";
-    src: url('/assets/fonts/Basis-Grotesque-Pro-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Basis Grotesque Pro Black";
-    src: url('/assets/fonts/Basis-Grotesque-Pro-Black-Italic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-}
+@import url('https://rsms.me/inter/inter.css');
 
 @font-face {
     font-family: "GT America Extended Bold";
@@ -68,48 +55,6 @@
     font-family: "GT America Expanded Black";
     src: url('/assets/fonts/GT-America-Expanded-Black-Italic.woff') format('woff');
     font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "AT Surt Regular";
-    src: url('/assets/fonts/AT-Surt-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "AT Surt Regular";
-    src: url('/assets/fonts/AT-Surt-Regular-Oblique.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "AT Surt Regular";
-    src: url('/assets/fonts/AT-Surt-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "AT Surt Regular";
-    src: url('/assets/fonts/AT-Surt-bold-oblique.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "AT Surt Regular";
-    src: url('/assets/fonts/ATSurtMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "AT Surt Regular";
-    src: url('/assets/fonts/ATSurtMediumOblique.woff') format('woff');
-    font-weight: 500;
     font-style: italic;
 }
 

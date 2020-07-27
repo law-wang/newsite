@@ -3,14 +3,8 @@ $bodyColor: #000000;
 $containerbg: #000000;
 $linkhover: #cc1100;
 
-$bodyFont: "aktiv-grotesk", sans-serif;
-$navigationfont: "GT America Extended Bold", sans-serif;
-$headerfont: "Basis Grotesque Pro Black", sans-serif;
-$marqueefont: "GT America Expanded Light", "aktiv-grotesk-extended", Arial, sans-serif;
-$bodytextfont: "Capsule Sans Regular", "AT Surt Regular", "aktiv-grotesk", sans-serif; 
-$subtitlefont: neue-haas-grotesk-text, "AT Surt Regular", "aktiv-grotesk", sans-serif; 
+$bodyFont: "Inter", "aktiv-grotesk", sans-serif;
 $projectTitleFont: "Millionaire Script", serif;
-$projectHeaderFont: "aktiv-grotesk-extended", sans-serif;
 $monofont: "zeitung-mono", sans-serif;
 
 ::-moz-selection { color: $linkhover}
@@ -64,17 +58,9 @@ body {
   max-width: 1600px;
   height: 100%;
 }
-.overall-header {
-  flex-basis: 200px;
-  @media only screen and (max-width: 650px) {
-    flex-basis: 195px;
-  }
-}
 .overall-content {
   height: 100%;
   flex-basis: auto;
-  margin-top: 5px;
-  border-top: 5px solid black;
 }
 .noscroll {
   overflow-y: hidden;
@@ -91,7 +77,6 @@ footer {
   width: 100%;
   text-align: center;
   p {
-    font-family: $bodytextfont;
     font-size: 15px;
     margin: 0;
     padding: 2px 0;
@@ -118,32 +103,44 @@ footer {
       -ms-user-select: none; 
           user-select: none;
 }
-.bgcolor-changer {
-  // transition: background-color 0.5s linear;
-  // &:hover {
-  //   background-color: $linkhover;
-  //   cursor: alias;
-  // }
+.border-bottom,
+.mobile-border-bottom,
+.mobile-border-top,
+.border-top,
+.border-right,
+.mobile-border-right {
+  box-sizing: border-box;
 }
-
-/* Footer ONLY */
-@keyframes footerText {
-  0% { content: "love"; color: black; }
-  10% { color: rgba(255, 0, 0, 0); }
-  20% { content: "$$$"; color: black; }
-  30% { color: rgba(255, 0, 0, 0); }
-  40% { content: "time"; color: black; }
-  50% { color: rgba(255, 0, 0, 0); }
-  60% { content: "定境"; color: black; }
-  70% { color: rgba(255, 0, 0, 0); }
-  80% { content: "⌘"; color: black; }
-  90% { color: rgba(255, 0, 0, 0); }
-  100% { content: "举世盛名"; color: black; }
-}
-.footer-changer {
-  &:after {
-    animation: footerText 20s linear infinite alternate;
-    content: "love";
-    font-size: 15px;
+.border-bottom {
+  border-bottom: 2px solid black;
+  &:last-child {
+    border-bottom: none;
   }
 }
+.border-top {
+  border-top: 2px solid black;
+}
+.border-right {
+  border-right: 2px solid black;
+}
+.mobile-show {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .mobile-border-bottom {
+    border-bottom: 2px solid black;
+  }
+  .mobile-border-top {
+    border-top: 2px solid black;
+  }
+  .mobile-border-right {
+    border-right: 2px solid black;
+  }
+  .mobile-show {
+    display: block;
+  }
+  .mobile-hide {
+    display: none;
+  }
+}
+

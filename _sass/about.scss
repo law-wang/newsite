@@ -10,12 +10,10 @@
     p {
         margin-top: 0;
         margin-bottom: 0;    
-        font-family: $bodytextfont;
             font-weight: normal;
             font-size: 60px;
             line-height: 1.2em;
         a {
-            font-family: $navigationfont;
                 font-weight: 500px;
                 text-transform: uppercase;
         }
@@ -37,7 +35,6 @@
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
-    font-family: $marqueefont;
         font-weight: 300;
         font-size: 40px;
         text-transform: uppercase;
@@ -83,7 +80,6 @@
 
 .home {
     overflow-y: hidden;
-    font-family: $subtitlefont;
         font-weight: normal;
         font-size: 100px;
         text-transform: uppercase;

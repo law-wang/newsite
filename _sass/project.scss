@@ -7,14 +7,14 @@
     grid: auto / 73% 27%;
     grid-template-areas: 
         "projects fun-things";
-    grid-gap: 5px;
+    grid-gap: 2px;
     overflow-x: hidden;
     background-color: $containerbg;
     @media only screen and (max-width: 1200px) {
         grid: auto / 68% 32%;
     }
     @media only screen and (max-width: 1050px) {
-        grid: auto / 60% 40%;
+        grid: auto / 65% 35%;
     }
     @media only screen and (max-width: 650px) {
         display: flex;
@@ -27,11 +27,9 @@
         }
     }
     .project-header {
-        font-family: $projectHeaderFont;
-            font-size: 80px;
-            text-transform: uppercase;
-            font-weight: 900;
-        padding: 8px;
+        font-size: 70px;
+        font-weight: 500;
+        padding: 8px 0;
         line-height: 1.04em;
         @media only screen and (max-width: 900px) {
             font-size: 60px;
@@ -42,6 +40,9 @@
         @media only screen and (max-width: 650px) {
             text-align: center;
         }
+    }
+    .fun-things-header {
+        padding: 8px 5px;
     }
 }
 .project-grouping,
@@ -62,10 +63,11 @@
 }
 
 .readmore-links {
-    font-family: $projectHeaderFont;
-      font-size: 30px;
-      font-weight: 900;
+    font-size: 30px;
+    font-weight: 500;
     margin: 10px auto 5px auto;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     a {
@@ -85,28 +87,29 @@
         text-transform: uppercase;
         font-size: 40px;
     @media only screen and (max-width: 650px) {
-        font-size: 35px;
-    }
-    @media only screen and (max-width: 550px) {
         font-size: 30px;
+        padding-left: 10px;
     }
 }
 
 /* Accordion Set Up */
+.accordionPiece {
+    &:not(:last-child) {
+        border-bottom: 2px solid black;
+    }
+}
 input {
 	display: none;
 	+ label { 
 		display: block;
 		position: relative;
-        padding: 10px 30px 0 20px;
+        padding: 10px 30px 0 10px;
         font-family: $projectTitleFont;
             font-size: 40px;
             text-transform: uppercase;
         @media only screen and (max-width: 650px) {
-            font-size: 35px;
-        }
-        @media only screen and (max-width: 550px) {
             font-size: 30px;
+            padding-left: 10px;
         }
 	}
 	+ label:after,
@@ -132,8 +135,11 @@ input {
     }
     ~ div {
         height: 1px;
-        padding: 0 10px;
-		overflow: hidden; 
+        padding: 0 10px 0 0;
+        overflow: hidden; 
+        @media only screen and (max-width: 650px) {
+            padding: 0 5px;
+        }
 		> * {
 			opacity: 0;
 			transition: 1s;
@@ -141,12 +147,8 @@ input {
         > p {
             padding: 0;
             margin: 0;
-            font-family: $bodytextfont;
-                font-size: 30px;
-                line-height: 1.25em;
-            @media only screen and (max-width: 650px) {
-                font-size: 20px;
-            }
+            font-size: 20px;
+            line-height: 1.25em;
         }
 	}
 }
@@ -174,7 +176,6 @@ label:hover {
     color: $linkhover;
 }
 
-
 /* Individual Project Pages ONLY */
 .projectpage {
     height: 100%;
@@ -198,7 +199,6 @@ label:hover {
         grid-gap: 5px;
     }
     .projectpost-title {
-        font-family: $projectHeaderFont;
             font-size: 40px;
             text-transform: uppercase;
             font-weight: 900;
@@ -210,7 +210,6 @@ label:hover {
     }
     .projectpost-content {
         padding: 0 10px;
-        font-family: $bodytextfont;
         font-size: 22px;
         overflow-y: scroll;
     }
@@ -220,7 +219,6 @@ label:hover {
         overflow-y: auto;
         .projpost-nav-title {
             width: 100%;
-            font-family: $navigationfont;
                 font-size: 40px;
             padding: 0 10px;
             @media only screen and (max-width: 650px) {
@@ -228,10 +226,9 @@ label:hover {
             }
         }
         .projpost-nav-item {
-            font-family: $projectTitleFont;
-                font-size: 20px;
-                text-transform: uppercase;
-                padding: 5px 10px 0 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 5px 10px 0 10px;
         }
     }
 }

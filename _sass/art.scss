@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
-    font-family: $navigationfont;
         font-weight: 300;
         font-size: 50px;
         text-transform: uppercase;
@@ -93,14 +92,12 @@
     font-family: sans-serif;
     color: white;
     .content-title {
-        font-family: $navigationfont;
         font-size: 30px;
         padding-bottom: 15px;
         text-transform: uppercase;
         margin: 0;
     }
     .content-text {
-        font-family: $bodytextfont;
         text-align: justify;
         font-size: 15px;
         margin: 0 auto;

@@ -4,13 +4,14 @@
     
     {% for post in site.tags.Featured %}
 
-    <div class="accordionPiece border-bottom">
+    <div class="accordionPiece">
         <input type="checkbox" id="{{ forloop.index }}" name="accordion" />
         <label for="{{ forloop.index }}">{{ post.title }}</label>
         <div>
             <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
             <div class="readmore-links">
-                <a href="{{ post.url }}" style="text-align: left; float: left;">CONTINUE READING</a>
+                <div>{{ post.date | date: '%b %d, %Y' }}</div>
+                <a href="{{ post.url }}" >CONTINUE READING</a>
             </div>
         </div>
     </div>
