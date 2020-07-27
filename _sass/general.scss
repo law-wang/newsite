@@ -59,7 +59,9 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  width: 100%;
+  width: 98%;
+  margin: 0 auto;
+  max-width: 1600px;
   height: 100%;
 }
 .overall-header {
@@ -117,11 +119,11 @@ footer {
           user-select: none;
 }
 .bgcolor-changer {
-  transition: background-color 0.5s linear;
-  &:hover {
-    background-color: $linkhover;
-    cursor: alias;
-  }
+  // transition: background-color 0.5s linear;
+  // &:hover {
+  //   background-color: $linkhover;
+  //   cursor: alias;
+  // }
 }
 
 /* Footer ONLY */
