@@ -1,6 +1,7 @@
 function greeting() {
-  var day = new Date();
-  var hour = day.getHours();
+  let day = new Date()
+  let hour = day.getHours()
+  const greetingContainer = document.getElementById("greeting")
   let greetingText = ""
   switch(hour) {
       case 0: 
@@ -78,6 +79,7 @@ function greeting() {
       default: 
           greetingText = "We could follow the sparks, I'll drive."
   }
+  greetingContainer.innerHTML = greetingText
 }
 
 function closeAbout() {
@@ -92,4 +94,26 @@ function showAbout() {
   } else {
     aboutBlock.classList.add('about-show')
   }
+}
+
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  if(h == 0){
+      h = 12;
+  }
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("clock").innerText = time;
+  document.getElementById("clock").textContent = time;
+  setTimeout(showTime, 1000);
 }

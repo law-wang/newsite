@@ -227,6 +227,16 @@ header button { cursor: pointer; outline: none; border: 0; font-size: 1.2rem; pa
 
 footer { left: 0; bottom: 0; width: 100%; text-align: center; font-size: 15px; margin: 0; padding: 2px 0; border-top: 2px solid black; }
 
+footer > div { border-bottom: 2px solid black; margin: 0 auto 2px auto; padding-bottom: 2px; display: flex; justify-content: space-between; }
+
+footer > div span:first-child { text-align: left; font-feature-settings: "tnum"; }
+
+@media only screen and (max-width: 600px) { footer > div span:first-child { display: none; } }
+
+footer > div span:last-child { text-align: right; }
+
+@media only screen and (max-width: 600px) { footer > div span:last-child { text-align: left; } }
+
 .about-block { width: 80%; max-width: 1500px; margin: 20px 15px 20px auto; text-align: right; }
 
 .about-block p { margin-top: 0; margin-bottom: 0; font-weight: normal; font-size: 60px; line-height: 1.2em; }

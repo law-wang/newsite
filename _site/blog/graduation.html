@@ -39,7 +39,7 @@
 
 
   </head>
-  <body onload = "greeting();">
+  <body onload = "greeting(); showTime();">
     
     <section class="overall">
       
@@ -306,7 +306,7 @@ Good evening. It is an absolute honor to be here. Six years ago, when I arrived 
       <footer>
     <div>
         <span id="clock">{time.toLocaleTimeString()}</span>
-        <span id="greeting">{greetingText}</span>
+        <span id="greeting"></span>
     </div>
     &copy; 2020 code & design by me 满载星海 from LA
 </footer>
