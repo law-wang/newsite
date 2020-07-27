@@ -61,6 +61,9 @@ body {
   margin: 0 auto;
   max-width: 1600px;
   height: 100%;
+  @media only screen and (max-width: 650px) {
+    width: 95%;
+  }
 }
 .overall-content {
   height: 100%;

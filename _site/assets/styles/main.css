@@ -181,6 +181,8 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; overflow-x: hidden; }
 
 .overall { display: flex; flex-flow: column; justify-content: flex-start; width: 98%; margin: 0 auto; max-width: 1600px; height: 100%; }
 
+@media only screen and (max-width: 650px) { .overall { width: 95%; } }
+
 .overall-content { height: 100%; flex-basis: auto; }
 
 .noscroll { overflow-y: hidden; display: inline-block; vertical-align: top; width: 100%; }
@@ -332,7 +334,7 @@ footer > div span:last-child { text-align: right; }
 @media only screen and (max-width: 650px) { .blog-menu .mobile-featured, .blogfeatured .mobile-featured { display: block; border-bottom: 2px solid black; } }
 
 /* Post Styling */
-.post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 5px; overflow-x: hidden; background-color: #000000; }
+.post { width: 100%; height: 100%; display: grid; grid: auto / 65% 35%; grid-template-areas: "content blog-menu"; grid-gap: 2px; overflow-x: hidden; background-color: #000000; }
 
 @media only screen and (max-width: 1000px) { .post { grid: auto / 50% 50%; } }
 
@@ -370,11 +372,11 @@ footer > div span:last-child { text-align: right; }
 /* Navigation Styling */
 .post-navigation { order: 1; width: 100%; flex-basis: 20px; background-color: #f2f2f2; z-index: 100; }
 
-.post-navigation a { font-size: 15px; margin: 0; }
+.post-navigation a { padding: 2px 0; font-size: 15px; margin: 0; }
 
 .post-navigation a:hover { color: #000000; }
 
-.post-navigation .prev { display: block; width: auto; float: left; padding-left: 5px; }
+.post-navigation .prev { display: block; width: auto; float: left; padding-left: 0; }
 
 .post-navigation .next { display: block; width: auto; float: right; text-align: right; padding-right: 5px; }
 
@@ -430,9 +432,9 @@ input + label { display: block; position: relative; padding: 10px 30px 0 10px; f
 
 input + label:after, input + label:before { position: absolute; background: black; content: ''; transform: rotate(0deg); transition: 0.5s; top: 50%; }
 
-input + label:after { right: 10px; width: 20px; height: 4px; margin-top: 0px; }
+input + label:after { right: 10px; width: 20px; height: 2px; margin-top: 0px; }
 
-input + label:before { right: 18px; height: 20px; width: 4px; margin-top: -8px; }
+input + label:before { right: 19px; height: 20px; width: 2px; margin-top: -9px; }
 
 input ~ div { height: 1px; padding: 0 10px 0 0; overflow: hidden; }
 

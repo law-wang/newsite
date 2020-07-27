@@ -111,7 +111,7 @@
     grid: auto / 65% 35%;
     grid-template-areas: 
         "content blog-menu";
-    grid-gap: 5px;
+    grid-gap: 2px;
     overflow-x: hidden;
     background-color: $containerbg;
     @media only screen and (max-width: 1000px) {
@@ -213,7 +213,8 @@
 	background-color: $background;
     z-index: 100;
     a {
-            font-size: 15px;
+        padding: 2px 0;
+        font-size: 15px;
         margin: 0;
         &:hover {
             color: $bodyColor;
@@ -223,7 +224,7 @@
         display: block;
         width: auto;
         float: left;
-        padding-left: 5px;
+        padding-left: 0;
     }
     .next {
         display: block;
