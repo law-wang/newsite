@@ -5,11 +5,11 @@ layout: default
 <section class="projectpage">
     <div class="projectpage-grid grid">
 
-        <div class="projectpost-title bgcolor-changer noselect column-xs-12"> {{ page.title }} </div>
+        <div class="projectpost-title mobile-border-bottom bgcolor-changer noselect column-xs-12"> {{ page.title }} </div>
 
         <div class="projectpost-content column-xs-12 column-md-9 column-lg-10"> {{ content }} </div>
 
-        <div class="projectpost-nav column-xs-12 column-md-3 column-lg-2">
+        <div class="projectpost-nav mobile-border-top column-xs-12 column-md-3 column-lg-2">
 
             {% assign cat = page.category %}
             {% for post in site.categories[cat] %}

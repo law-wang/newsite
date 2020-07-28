@@ -1,7 +1,7 @@
 .aboutblock {
     display: block;
     position: fixed;
-    z-index: 999;
+    z-index: 500;
     bottom: -100%;
     width: 98%;
     max-width: 1600px;
@@ -9,6 +9,7 @@
     overflow: auto;
     background-color: rgba(242, 242, 242, 0.6);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     -webkit-transform: scale(1.0);
     -moz-transform: scale(1.0);
     -ms-transform: scale(1.0);
@@ -22,6 +23,9 @@
     transition: visibility 0s linear 1s, opacity 0.25s 0s, transform 1s, bottom 0.7s, -webkit-transform 1s;
     border-top: 2px solid black;
     padding-bottom: 20px;
+    @media only screen and (max-width: 650px) {
+        width: 95%;
+    }
     p {
         margin: 0 auto;
         font-size: 1.3rem;
@@ -73,7 +77,10 @@
     bottom: 0;
     visibility: visible;
     overflow: auto;
-    z-index: 999;
+    z-index: 500;
+    background-color: rgba(242, 242, 242, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     -webkit-transform: scale(1.0);
     -moz-transform: scale(1.0);
     -ms-transform: scale(1.0);
@@ -85,4 +92,7 @@
     -moz-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.8s, bottom 0.7s;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.8s, bottom 0.7s;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.8s, bottom 0.7s, -webkit-transform 0.8s;
+    @media only screen and (max-width: 650px) {
+        width: 95%;
+    }
 }

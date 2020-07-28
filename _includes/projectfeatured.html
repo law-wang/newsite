@@ -1,0 +1,20 @@
+<main class="projectfeatured">
+
+    {% for post in site.tags.Featured %}
+    {% if post.project == true %}
+
+    <div class="accordionPiece">
+        <input type="checkbox" id="{{ forloop.index }}" name="accordion" />
+        <label for="{{ forloop.index }}">{{ post.title }}</label>
+        <div>
+            <p>{{ post.description }}</p>
+            <div class="readmore-links">
+                <a href="{{ post.url }}" >CONTINUE READING</a>
+                <a href="{{ post.external }}" >See it in action</a>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+    {% endfor %}
+</main>

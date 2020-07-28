@@ -14,6 +14,7 @@
     }
     @media only screen and (max-width: 650px) {
         display: inherit;
+        background-color: $background;
     }
 }
 .item-blog-menu,
@@ -43,7 +44,6 @@
         padding: 8px 5px;
         line-height: 1.04em;
         @media only screen and (max-width: 650px) {
-            text-align: center;
             font-size: 40px;
         }
     }
@@ -90,9 +90,6 @@
     @media only screen and (max-width: 1050px) {
         font-size: 50px;
     }
-    @media only screen and (max-width: 650px) {
-        text-align: center;
-    }
 }
 
 /* Post Styling */
@@ -106,6 +103,7 @@
     grid-gap: 2px;
     overflow-x: hidden;
     background-color: $containerbg;
+    
     @media only screen and (max-width: 1000px) {
         grid: auto / 50% 50%;
     }
@@ -113,6 +111,7 @@
         grid: 100% / 100%;
         grid-template-areas: 
             "content";
+        background-color: $background;
     }
 }
 .item-post-content {
