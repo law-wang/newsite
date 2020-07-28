@@ -109,6 +109,11 @@ input {
             font-size: 30px;
             padding-left: 10px;
         }
+        @media (hover: none) {
+            &:hover {
+                color: inherit;
+            }
+        }
 	}
 	+ label:after,
 	+ label:before {

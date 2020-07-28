@@ -152,8 +152,13 @@ button:hover { color: #cc1100; cursor: help; }
 
 img { -webkit-backface-visibility: hidden; -ms-transform: translateZ(0); /* IE 9 */ -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */ transform: translateZ(0); }
 
+@media (hover: none) { a:hover { color: inherit; }
+  button:hover { color: inherit; } }
+
 /* Main Sections ONLY */
 body { width: 100vw; height: 100vh; margin: 0; padding: 0; overflow-x: hidden; }
+
+@media only screen and (max-width: 650px) { body { height: 100%; } }
 
 .overall { display: flex; flex-flow: column; justify-content: flex-start; width: 98%; margin: 0 auto; max-width: 1600px; height: 100%; }
 
@@ -203,7 +208,7 @@ header div:first-child { white-space: nowrap; }
 
 header button { cursor: pointer; outline: none; border: 0; font-size: 1.2rem; padding-left: 0; background-color: rgba(242, 242, 242, 0); -webkit-tap-highlight-color: rgba(242, 242, 242, 0); }
 
-footer { left: 0; bottom: 0; width: 100%; text-align: center; font-size: 15px; margin: 0; padding: 2px 0; border-top: 2px solid black; }
+footer { left: 0; bottom: 0; width: 100%; text-align: center; font-size: 15px; margin: 0; padding: 2px 0 5px 0; border-top: 2px solid black; }
 
 .aboutblock { display: block; position: fixed; z-index: 500; bottom: -100%; width: 98%; max-width: 1600px; visibility: hidden; overflow: auto; background-color: rgba(242, 242, 242, 0.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); -webkit-transition: visibility 0s linear 1s, opacity 0.25s 0s, bottom 0.7s, -webkit-transform 1s; transition: visibility 0s linear 1s, opacity 0.25s 0s, bottom 0.7s, -webkit-transform 1s; -o-transition: visibility 0s linear 1s, opacity 0.25s 0s, transform 1s, bottom 0.7s; -moz-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.8s, bottom 0.7s; transition: visibility 0s linear 1s, opacity 0.25s 0s, transform 1s, bottom 0.7s; transition: visibility 0s linear 1s, opacity 0.25s 0s, transform 1s, bottom 0.7s, -webkit-transform 1s; border-top: 2px solid black; padding-bottom: 20px; }
 
@@ -382,6 +387,8 @@ input + label { display: block; position: relative; padding: 10px 30px 0 10px; f
 
 @media only screen and (max-width: 650px) { input + label { font-size: 30px; padding-left: 10px; } }
 
+@media (hover: none) { input + label:hover { color: inherit; } }
+
 input + label:after, input + label:before { position: absolute; background: black; content: ''; transform: rotate(0deg); transition: 0.5s; top: 50%; }
 
 input + label:after { right: 10px; width: 20px; height: 2px; margin-top: 0px; }
@@ -451,7 +458,7 @@ label:hover { cursor: help; color: #cc1100; }
 
 @media only screen and (max-width: 400px) { .gallery-navigation { font-size: 20px; } }
 
-.gallery-container { width: 100%; padding: 10px 0; margin: 0 auto; max-width: 1500px; }
+.gallery-container { width: 100%; padding: 10px 0; margin: 0 auto; max-width: 1600px; }
 
 .gallery-container figure { margin: 0; }
 
