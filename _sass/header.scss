@@ -30,6 +30,15 @@ header {
     background-color: rgba(242, 242, 242, 0);
     -webkit-tap-highlight-color: rgba(242, 242, 242, 0);
   }
+  @media only screen and (max-width: 650px) {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    max-width: 1600px;
+    background-color: rgba(242, 242, 242, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
 }
 
 footer {
