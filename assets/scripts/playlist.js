@@ -53,23 +53,3 @@ request.post(authOptions, function(error, response, body) {
     })
   }
 })
-
-
-
-// for (var track in tracknames) {
-//     var newElement = document.createElement('div');
-//     newElement.className = "track";
-//     newElement.innerHTML = tracknames[track];
-//     playlistContainer.appendChild(newElement);
-// }
-
-// for (i = 0; i < 20; i++) {
-//     temp = document.createElement('div');
-//     temp.className = 'track';
-//     temp.innerHTML = tracknames[i];
-//     console.log(tracknames[i])
-//     playlistContainer.appendChild(temp);
-// }
-
-// console.log(tracknames)
-// console.log(tracklinks)
