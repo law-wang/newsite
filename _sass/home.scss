@@ -1,0 +1,17 @@
+#playlist-container {
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    font-style: italic;
+    // font-size: 10rem;
+    font-size: 150px;
+    line-height: 150px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+    .track {
+        // max-width: 50%;
+    }
+}

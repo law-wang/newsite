@@ -166,6 +166,8 @@ body { width: 100vw; height: 100vh; margin: 0; padding: 0; overflow-x: hidden; }
 
 .overall-content { height: 100%; flex-basis: auto; }
 
+@media only screen and (max-width: 650px) { .overall-content { margin-top: 40px; } }
+
 .noscroll { overflow-y: hidden; display: inline-block; vertical-align: top; width: 100%; }
 
 .yesscroll { overflow-y: scroll; overflow-x: hidden; }
@@ -208,7 +210,11 @@ header div:first-child { white-space: nowrap; }
 
 header button { cursor: pointer; outline: none; border: 0; font-size: 1.2rem; padding-left: 0; background-color: rgba(242, 242, 242, 0); -webkit-tap-highlight-color: rgba(242, 242, 242, 0); }
 
+@media only screen and (max-width: 650px) { header { position: fixed; top: 0; width: 95%; max-width: 1600px; z-index: 800; background-color: rgba(242, 242, 242, 0.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); } }
+
 footer { left: 0; bottom: 0; width: 100%; text-align: center; font-size: 15px; margin: 0; padding: 2px 0 5px 0; border-top: 2px solid black; }
+
+#playlist-container { font-family: freight-big-pro, serif; font-weight: 300; font-style: italic; font-size: 150px; line-height: 150px; height: 80vh; width: 100%; display: flex; flex-direction: column; overflow: hidden; flex-wrap: wrap; }
 
 .aboutblock { display: block; position: fixed; z-index: 500; bottom: -100%; width: 98%; max-width: 1600px; visibility: hidden; overflow: auto; background-color: rgba(242, 242, 242, 0.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); -webkit-transition: visibility 0s linear 1s, opacity 0.25s 0s, bottom 0.7s, -webkit-transform 1s; transition: visibility 0s linear 1s, opacity 0.25s 0s, bottom 0.7s, -webkit-transform 1s; -o-transition: visibility 0s linear 1s, opacity 0.25s 0s, transform 1s, bottom 0.7s; -moz-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.8s, bottom 0.7s; transition: visibility 0s linear 1s, opacity 0.25s 0s, transform 1s, bottom 0.7s; transition: visibility 0s linear 1s, opacity 0.25s 0s, transform 1s, bottom 0.7s, -webkit-transform 1s; border-top: 2px solid black; padding-bottom: 20px; }
 
