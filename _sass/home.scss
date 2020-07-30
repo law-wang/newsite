@@ -2,18 +2,23 @@
     font-family: freight-big-pro, serif;
     font-weight: 300;
     font-style: italic;
-    // font-size: 10rem;
-    font-size: 130px;
-    line-height: 130px;
-    height: 90vh;
+    height: 50vw;
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     flex-wrap: wrap;
     .track {
-        // max-width: 50%;
         height: 20%;
-        white-space: nowrap
+        white-space: nowrap;
+        font-size: 9vw;
+        line-height: 9vw;
+        @media only screen and (min-width: 1600px) {
+            font-size: 144px;
+            line-height: 144px;
+        }
+    }
+    @media only screen and (min-width: 1600px) {
+        height: 800px;
     }
 }
