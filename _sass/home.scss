@@ -2,7 +2,7 @@
     font-family: freight-big-pro, serif;
     font-weight: 300;
     font-style: italic;
-    height: 50vw;
+    height: 46vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,6 @@
         }
     }
     @media only screen and (min-width: 1600px) {
-        height: 800px;
+        height: 750px;
     }
 }
